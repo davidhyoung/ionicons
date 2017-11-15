@@ -1,11 +1,16 @@
 /*! Built with http://stenciljs.com */
+
+DocsSite.loadStyles("icon-search","\nicon-search.hydrated{visibility:inherit}");
 DocsSite.loadComponents(
 
 /**** module id (dev mode) ****/
 "icon-search",
 
 /**** component modules ****/
-function importComponent(exports, h, t, Context, publicPath) {
+function importComponent(exports, h, Context, publicPath) {
+"use strict";
+// @stencil/core
+
 var LandingPage = /** @class */ (function () {
     function LandingPage() {
     }
@@ -19,21 +24,21 @@ var LandingPage = /** @class */ (function () {
         console.log('focusin', ev);
     };
     LandingPage.prototype.render = function () {
-        return h("div", { "c": { "icon-search": true } },
-            h("div", { "c": { "search": true } },
-                h("input", { "a": { "id": "search", "type": "search", "placeholder": "Search" } })));
+        return h("div", { class: "icon-search" },
+            h("div", { class: "search" },
+                h("input", { id: "search", type: "search", placeholder: "Search" })));
     };
     return LandingPage;
 }());
 
-exports['ICON-SEARCH'] = LandingPage;
+exports['icon-search'] = LandingPage;
 },
 
 
 /***************** icon-search *****************/
 [
 /** icon-search: tag **/
-"ICON-SEARCH",
+"icon-search",
 
 /** icon-search: members **/
 0 /* no members */,
@@ -42,4 +47,4 @@ exports['ICON-SEARCH'] = LandingPage;
 {}
 
 ]
-)
+);

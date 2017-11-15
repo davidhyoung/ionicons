@@ -2,11 +2,11 @@
   "namespace": "DocsSite",
   "components": [
     [
-      "ICON-SEARCH",
       "icon-search",
-      {
-        "$": "icon-search"
-      },
+      "icon-search",
+      1,
+      0,
+      0,
       0,
       [
         [
@@ -24,14 +24,12 @@
       ]
     ],
     [
-      "LANDING-PAGE",
       "landing-page",
-      {
-        "$": "landing-page"
-      }
+      "landing-page",
+      1
     ]
   ],
-  "loader": "docssite.js",
-  "core": "docssite/docssite.core.js",
-  "corePolyfilled": "docssite/docssite.core.pf.js"
+  "loader": "../docssite.js",
+  "core": "docssite.core.js",
+  "corePolyfilled": "docssite.core.pf.js"
 }

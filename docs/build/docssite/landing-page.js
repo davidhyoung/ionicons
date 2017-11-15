@@ -1,39 +1,46 @@
 /*! Built with http://stenciljs.com */
+
+DocsSite.loadStyles("landing-page","\nlanding-page.hydrated{visibility:inherit}");
 DocsSite.loadComponents(
 
 /**** module id (dev mode) ****/
 "landing-page",
 
 /**** component modules ****/
-function importComponent(exports, h, t, Context, publicPath) {
+function importComponent(exports, h, Context, publicPath) {
+"use strict";
+// @stencil/core
+
 var LandingPage = /** @class */ (function () {
     function LandingPage() {
     }
     LandingPage.prototype.render = function () {
-        return h("div", 0,
-            h("h1", 0, t("The premium icon pack for "),
-                h("a", { "a": { "href": "http://ionicframework.com/" } }, t("Ionic Framework")), t(".")),
-            h("h2", 0, t("100% free and open source. MIT Licensed.")),
-            h("div", 0,
-                h("span", { "c": { "twitter-share": true } },
-                    h("a", { "c": { "twitter-share-button": true }, "a": { "href": "https://twitter.com/share", "data-via": "ionicframework", "data-hashtags": "icons,webdev,mobile", "data-related": "benjsperry,maxlynch,adamdbradley,drifty" } }, t("Tweet"))),
-                h("span", { "c": { "twitter-follow": true } },
-                    h("a", { "c": { "twitter-follow-button": true }, "a": { "href": "https://twitter.com/ionicframework" } }, t("Follow @ionicframework"))),
-                h("span", { "c": { "github-star": true } },
-                    h("iframe", { "a": { "src": "http://ghbtns.com/github-btn.html?user=ionic-team&repo=ionicons&type=watch&count=true", "allowtransparency": "true", "frameborder": "0", "scrolling": "0", "width": "110", "height": "20" } }))),
-            h("icon-search", 0));
+        return h("div", null,
+            h("h1", null,
+                "The premium icon pack for ",
+                h("a", { href: "http://ionicframework.com/" }, "Ionic Framework"),
+                "."),
+            h("h2", null, "100% free and open source. MIT Licensed."),
+            h("div", null,
+                h("span", { class: "twitter-share" },
+                    h("a", { href: "https://twitter.com/share", class: "twitter-share-button", "data-via": "ionicframework", "data-hashtags": "icons,webdev,mobile", "data-related": "benjsperry,maxlynch,adamdbradley,drifty" }, "Tweet")),
+                h("span", { class: "twitter-follow" },
+                    h("a", { href: "https://twitter.com/ionicframework", class: "twitter-follow-button" }, "Follow @ionicframework")),
+                h("span", { class: "github-star" },
+                    h("iframe", { src: "http://ghbtns.com/github-btn.html?user=ionic-team&repo=ionicons&type=watch&count=true", allowtransparency: "true", frameborder: "0", scrolling: "0", width: "110", height: "20" }))),
+            h("icon-search", null));
     };
     return LandingPage;
 }());
 
-exports['LANDING-PAGE'] = LandingPage;
+exports['landing-page'] = LandingPage;
 },
 
 
 /***************** landing-page *****************/
 [
 /** landing-page: tag **/
-"LANDING-PAGE",
+"landing-page",
 
 /** landing-page: members **/
 0 /* no members */,
@@ -42,4 +49,4 @@ exports['LANDING-PAGE'] = LandingPage;
 {}
 
 ]
-)
+);
