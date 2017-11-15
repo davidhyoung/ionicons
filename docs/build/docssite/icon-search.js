@@ -11,25 +11,22 @@ function importComponent(exports, h, Context, publicPath) {
 "use strict";
 // @stencil/core
 
-var LandingPage = /** @class */ (function () {
-    function LandingPage() {
-    }
-    LandingPage.prototype.keyup = function (ev) {
+class LandingPage {
+    keyup(ev) {
         console.log('keyup', ev);
-    };
-    LandingPage.prototype.focusout = function (ev) {
+    }
+    focusout(ev) {
         console.log('focusout', ev);
-    };
-    LandingPage.prototype.focusin = function (ev) {
+    }
+    focusin(ev) {
         console.log('focusin', ev);
-    };
-    LandingPage.prototype.render = function () {
+    }
+    render() {
         return h("div", { class: "icon-search" },
             h("div", { class: "search" },
                 h("input", { id: "search", type: "search", placeholder: "Search" })));
-    };
-    return LandingPage;
-}());
+    }
+}
 
 exports['icon-search'] = LandingPage;
 },

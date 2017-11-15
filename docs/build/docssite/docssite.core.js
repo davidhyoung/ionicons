@@ -9,11 +9,6 @@ var s=document.querySelector("script[data-core='docssite.core.js'][data-path]");
   const toDashCase = str => str.replace(/([A-Z])/g, g => '-' + toLowerCase(g[0]));
   const noop = () => {};
   /**
-     * SSR Attribute Names
-     */
-  const SSR_VNODE_ID = 'data-ssrv';
-  const SSR_CHILD_ID = 'data-ssrc';
-  /**
      * Default style mode id
      */
   /**
@@ -148,48 +143,6 @@ var s=document.querySelector("script[data-core='docssite.core.js'][data-path]");
       elm._listeners = null;
     }
   }
-  function createDomControllerClient(win, now, rafPending) {
-    const readCBs = [];
-    const writeCBs = [];
-    const raf = cb => win.requestAnimationFrame(cb);
-    function rafFlush(timeStamp, startTime, cb, err) {
-      try {
-        startTime = now();
-        // ******** DOM READS ****************
-        while (cb = readCBs.shift()) {
-          cb(timeStamp);
-        }
-        // ******** DOM WRITES ****************
-        while (cb = writeCBs.shift()) {
-          cb(timeStamp);
-          if (now() - startTime > 8) {
-            break;
-          }
-        }
-      } catch (e) {
-        err = e;
-      }
-      (rafPending = readCBs.length > 0 || writeCBs.length > 0) && raf(rafFlush);
-      err && console.error(err);
-    }
-    return {
-      read: cb => {
-        readCBs.push(cb);
-        if (!rafPending) {
-          rafPending = true;
-          raf(rafFlush);
-        }
-      },
-      write: cb => {
-        writeCBs.push(cb);
-        if (!rafPending) {
-          rafPending = true;
-          raf(rafFlush);
-        }
-      },
-      raf: raf
-    };
-  }
   function createDomApi(win, doc, WindowCustomEvent) {
     // using the $ prefix so that closure is
     // cool with property renaming each of these
@@ -257,7 +210,7 @@ var s=document.querySelector("script[data-core='docssite.core.js'][data-path]");
     // if the element passed in is a shadow root, which is a document fragment
     // then we want to be adding attrs/props to the shadow root's "host" element
     // if it's not a shadow root, then we add attrs/props to the same element
-    const elm = newVnode.elm;
+    const elm = 11 === newVnode.elm.nodeType && newVnode.elm.host ? newVnode.elm.host : newVnode.elm;
     const oldVnodeAttrs = oldVnode && oldVnode.vattrs || EMPTY_OBJ;
     const newVnodeAttrs = newVnode.vattrs || EMPTY_OBJ;
     // remove attributes no longer present on the vnode by setting them to undefined
@@ -370,11 +323,6 @@ var s=document.querySelector("script[data-core='docssite.core.js'][data-path]");
       'function' === typeof vnode.vtag && (vnode = vnode.vtag(Object.assign({}, vnode.vattrs, {
         children: vnode.vchildren
       })));
-      if ('slot' === vnode.vtag && !useNativeShadowDom) {
-        // this was a slot node, we do not create slot elements, our work here is done
-        // no need to return any element to be added to the dom
-        return null;
-      }
       if (isDef(vnode.vtext)) {
         // create text node
         vnode.elm = domApi.$createTextNode(vnode.vtext);
@@ -383,6 +331,9 @@ var s=document.querySelector("script[data-core='docssite.core.js'][data-path]");
         const elm = vnode.elm = domApi.$createElement(vnode.vtag);
         // add css classes, attrs, props, listeners, etc.
         updateElement(plt, null, vnode, isSvgMode);
+        null !== scopeId && elm._scopeId !== scopeId && // if there is a scopeId and this is the initial render
+        // then let's add the scopeId as an attribute
+        domApi.$setAttribute(elm, elm._scopeId = scopeId, '');
         const children = vnode.vchildren;
         if (children) {
           let childNode;
@@ -517,6 +468,11 @@ var s=document.querySelector("script[data-core='docssite.core.js'][data-path]");
           isDef(oldChildren) && // no new child vnodes, but there are old child vnodes to remove
           removeVnodes(elm, oldChildren, 0, oldChildren.length - 1);
         }
+      } else if (elm._hostContentNodes && elm._hostContentNodes.defaultSlot) {
+        // this element has slotted content
+        let parentElement = elm._hostContentNodes.defaultSlot[0].parentElement;
+        domApi.$setTextContent(parentElement, newVNode.vtext);
+        elm._hostContentNodes.defaultSlot = [ parentElement.childNodes[0] ];
       } else {
         oldVNode.vtext !== newVNode.vtext && // update the text content for the text only vnode
         // and also only if the text is different than before
@@ -524,14 +480,17 @@ var s=document.querySelector("script[data-core='docssite.core.js'][data-path]");
       }
     }
     // internal variables to be reused per patch() call
-    let isUpdate, hostContentNodes, useNativeShadowDom;
+    let isUpdate, hostContentNodes, scopeId;
     return function patch(oldVNode, newVNode, isUpdatePatch, hostElementContentNodes, encapsulation, ssrPatchId) {
       // patchVNode() is synchronous
       // so it is safe to set these variables and internally
       // the same patch() call will reference the same data
       isUpdate = isUpdatePatch;
       hostContentNodes = hostElementContentNodes;
-      !isUpdate;
+      scopeId = 2 === encapsulation || 1 === encapsulation && !domApi.$supportsShadowDom ? 'data-' + domApi.$tagName(oldVNode.elm) : null;
+      isUpdate || scopeId && // this host element should use scoped css
+      // add the scope attribute to the host
+      domApi.$setAttribute(oldVNode.elm, scopeId + '-host', '');
       // synchronous patch
       patchVNode(oldVNode, newVNode);
       // return our new vnode
@@ -599,70 +558,7 @@ var s=document.querySelector("script[data-core='docssite.core.js'][data-path]");
     vnode.vtext = textValue;
     return vnode;
   }
-  function createVNodesFromSsr(domApi, rootElm) {
-    var elm, ssrVNodeId, ssrVNode, i, j, jlen, allSsrElms = rootElm.querySelectorAll(`[${SSR_VNODE_ID}]`), ilen = allSsrElms.length;
-    if (rootElm._hasLoaded = ilen > 0) {
-      for (i = 0; i < ilen; i++) {
-        elm = allSsrElms[i];
-        ssrVNodeId = domApi.$getAttribute(elm, SSR_VNODE_ID);
-        ssrVNode = elm._vnode = new VNode();
-        ssrVNode.vtag = domApi.$tagName(ssrVNode.elm = elm);
-        for (j = 0, jlen = elm.childNodes.length; j < jlen; j++) {
-          addChildSsrVNodes(domApi, elm.childNodes[j], ssrVNode, ssrVNodeId, true);
-        }
-      }
-    }
-  }
-  function addChildSsrVNodes(domApi, node, parentVNode, ssrVNodeId, checkNestedElements) {
-    var nodeType = domApi.$nodeType(node);
-    var previousComment;
-    var childVNodeId, childVNodeSplt, childVNode;
-    if (checkNestedElements && 1 === nodeType) {
-      childVNodeId = domApi.$getAttribute(node, SSR_CHILD_ID);
-      if (childVNodeId) {
-        // split the start comment's data with a period
-        childVNodeSplt = childVNodeId.split('.');
-        // ensure this this element is a child element of the ssr vnode
-        if (childVNodeSplt[0] === ssrVNodeId) {
-          // cool, this element is a child to the parent vnode
-          childVNode = new VNode();
-          childVNode.vtag = domApi.$tagName(childVNode.elm = node);
-          // this is a new child vnode
-          // so ensure its parent vnode has the vchildren array
-          parentVNode.vchildren || (parentVNode.vchildren = []);
-          // add our child vnode to a specific index of the vnode's children
-          parentVNode.vchildren[childVNodeSplt[1]] = childVNode;
-          // this is now the new parent vnode for all the next child checks
-          parentVNode = childVNode;
-          // if there's a trailing period, then it means there aren't any
-          // more nested elements, but maybe nested text nodes
-          // either way, don't keep walking down the tree after this next call
-          checkNestedElements = '' !== childVNodeSplt[2];
-        }
-      }
-      // keep drilling down through the elements
-      for (var i = 0; i < node.childNodes.length; i++) {
-        addChildSsrVNodes(domApi, node.childNodes[i], parentVNode, ssrVNodeId, checkNestedElements);
-      }
-    } else if (3 === nodeType && (previousComment = node.previousSibling) && 8 === domApi.$nodeType(previousComment)) {
-      // split the start comment's data with a period
-      childVNodeSplt = domApi.$getTextContent(previousComment).split('.');
-      // ensure this is an ssr text node start comment
-      // which should start with an "s" and delimited by periods
-      if ('s' === childVNodeSplt[0] && childVNodeSplt[1] === ssrVNodeId) {
-        // cool, this is a text node and it's got a start comment
-        childVNode = t(domApi.$getTextContent(node));
-        childVNode.elm = node;
-        // this is a new child vnode
-        // so ensure its parent vnode has the vchildren array
-        parentVNode.vchildren || (parentVNode.vchildren = []);
-        // add our child vnode to a specific index of the vnode's children
-        parentVNode.vchildren[childVNodeSplt[2]] = childVNode;
-      }
-    }
-  }
-  function createQueueClient(domCtrl, now, resolvePending, rafPending) {
-    const raf = domCtrl.raf;
+  function createQueueClient(raf, now, resolvePending, rafPending) {
     const highPromise = Promise.resolve();
     const highPriority = [];
     const lowPriority = [];
@@ -693,8 +589,8 @@ var s=document.querySelector("script[data-core='docssite.core.js'][data-path]");
       doHighPriority();
       // always force a bunch of medium callbacks to run, but still have
       // a throttle on how many can run in a certain time
-      start = now();
-      while (lowPriority.length > 0 && now() - start < 4) {
+      start = 4 + now();
+      while (lowPriority.length > 0 && now() < start) {
         lowPriority.shift()();
       }
       (rafPending = lowPriority.length > 0) && // still more to do yet, but we've run out of time
@@ -1070,11 +966,11 @@ var s=document.querySelector("script[data-core='docssite.core.js'][data-path]");
       // the host element itself isn't patched because it already exists
       // kick off the actual render and any DOM updates
       elm._vnode = plt.render(oldVNode, h(null, vnodeHostData, vnodeChildren), isUpdateRender, elm._hostContentNodes, cmpMeta.encapsulation);
-      // attach the styles this component needs, if any
-      // this fn figures out if the styles should go in a
-      // shadow root or if they should be global
-      plt.attachStyles(cmpMeta, instance.mode, elm);
     }
+    // attach the styles this component needs, if any
+    // this fn figures out if the styles should go in a
+    // shadow root or if they should be global
+    plt.attachStyles(cmpMeta, instance.mode, elm);
     // it's official, this element has rendered
     elm.$rendered = true;
     if (elm.$onRender) {
@@ -1259,6 +1155,15 @@ var s=document.querySelector("script[data-core='docssite.core.js'][data-path]");
   function componentOnReady(elm, cb) {
     elm._hasDestroyed || (elm._hasLoaded ? cb(elm) : (elm._onReadyCallbacks = elm._onReadyCallbacks || []).push(cb));
   }
+  function useScopedCss(supportsNativeShadowDom, cmpMeta) {
+    if (2 === cmpMeta.encapsulation) {
+      return true;
+    }
+    if (1 === cmpMeta.encapsulation && !supportsNativeShadowDom) {
+      return true;
+    }
+    return false;
+  }
   function createPlatformClient(Context, App, win, doc, publicPath, hydratedCssClass) {
     const registry = {
       'html': {}
@@ -1271,8 +1176,7 @@ var s=document.querySelector("script[data-core='docssite.core.js'][data-path]");
     const controllerComponents = {};
     const domApi = createDomApi(win, doc);
     const now = () => win.performance.now();
-    // initialize Core global object
-    Context.dom = createDomControllerClient(win, now);
+    const raf = cb => window.requestAnimationFrame(cb);
     Context.addListener = ((elm, eventName, cb, opts) => addListener(plt, elm, eventName, cb, opts && opts.capture, opts && opts.passive));
     Context.enableListener = ((instance, eventName, enabled, attachTo) => enableEventListener(plt, instance, eventName, enabled, attachTo));
     Context.isServer = Context.isPrerender = !(Context.isClient = true);
@@ -1294,7 +1198,7 @@ var s=document.querySelector("script[data-core='docssite.core.js'][data-path]");
       loadBundle: loadBundle,
       onError: (err, type, elm) => console.error(err, type, elm && elm.tagName),
       propConnect: ctrlTag => proxyController(domApi, controllerComponents, ctrlTag),
-      queue: createQueueClient(Context.dom, now),
+      queue: createQueueClient(raf, now),
       registerComponents: components => (components || []).map(data => parseComponentLoaders(data, registry))
     };
     // create the renderer that will be used
@@ -1306,15 +1210,16 @@ var s=document.querySelector("script[data-core='docssite.core.js'][data-path]");
     rootElm.$activeLoading = [];
     // this will fire when all components have finished loaded
     rootElm.$initLoad = (() => rootElm._hasLoaded = true);
-    // if the HTML was generated from SSR
-    // then let's walk the tree and generate vnodes out of the data
-    createVNodesFromSsr(domApi, rootElm);
     function connectHostElement(cmpMeta, elm) {
       // set the "mode" property
       elm.mode || (// looks like mode wasn't set as a property directly yet
       // first check if there's an attribute
       // next check the app's global
       elm.mode = domApi.$getAttribute(elm, 'mode') || Context.mode);
+      domApi.$supportsShadowDom || 1 !== cmpMeta.encapsulation || (// this component should use shadow dom
+      // but this browser doesn't support it
+      // so let's polyfill a few things for the user
+      elm.shadowRoot = elm);
     }
     function defineComponent(cmpMeta, HostElementConstructor) {
       const tagName = cmpMeta.tagNameMeta;
@@ -1371,7 +1276,7 @@ var s=document.querySelector("script[data-core='docssite.core.js'][data-path]");
       }
     };
     function loadBundle(cmpMeta, elm, cb, bundleId) {
-      bundleId = cmpMeta.bundleIds[elm.mode] || cmpMeta.bundleIds;
+      bundleId = (cmpMeta.bundleIds[elm.mode] || cmpMeta.bundleIds)[0];
       if (loadedBundles[bundleId]) {
         // sweet, we've already loaded this bundle
         cb();
@@ -1385,7 +1290,7 @@ var s=document.querySelector("script[data-core='docssite.core.js'][data-path]");
     }
     function requestBundle(cmpMeta, bundleId, url, tmrId, scriptElm) {
       // create the url we'll be requesting
-      url = publicPath + bundleId + '.js';
+      url = publicPath + bundleId + (useScopedCss(domApi.$supportsShadowDom, cmpMeta) ? '.sc' : '') + '.js';
       function onScriptComplete() {
         clearTimeout(tmrId);
         scriptElm.onerror = scriptElm.onload = null;
@@ -1448,4 +1353,4 @@ var s=document.querySelector("script[data-core='docssite.core.js'][data-path]");
   // es6 class extends HTMLElement
   plt.registerComponents(App.components).forEach(cmpMeta => plt.defineComponent(cmpMeta, class extends HTMLElement {}));
 })(window, document, Context, appNamespace, publicPath);
-})({},"DocsSite","hydrated","/build/docssite/",document);
+})({},"DocsSite","hydrated","/build/docssite/");

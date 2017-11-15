@@ -3,7 +3,10 @@
   "components": [
     [
       "icon-search",
-      "icon-search",
+      [
+        "icon-search",
+        null
+      ],
       1,
       0,
       0,
@@ -25,11 +28,14 @@
     ],
     [
       "landing-page",
-      "landing-page",
+      [
+        "landing-page",
+        null
+      ],
       1
     ]
   ],
-  "loader": "../docssite.js",
   "core": "docssite.core.js",
-  "corePolyfilled": "docssite.core.pf.js"
+  "coreSsr": "docssite.core.ssr.js",
+  "corePolyfilled": "es5-build-disabled.js"
 }

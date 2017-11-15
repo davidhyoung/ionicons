@@ -9,30 +9,28 @@ import {
   LandingPage as IconSearch
 } from './components/icon-search/icon-search';
 
-interface HTMLIconSearchElement extends IconSearch, HTMLElement {
-}
-declare var HTMLIconSearchElement: {
-  prototype: HTMLIconSearchElement;
-  new (): HTMLIconSearchElement;
-};
 declare global {
+  interface HTMLIconSearchElement extends IconSearch, HTMLElement {
+  }
+  var HTMLIconSearchElement: {
+    prototype: HTMLIconSearchElement;
+    new (): HTMLIconSearchElement;
+  };
   interface HTMLElementTagNameMap {
-      "icon-search": HTMLIconSearchElement;
+    "icon-search": HTMLIconSearchElement;
   }
   interface ElementTagNameMap {
-      "icon-search": HTMLIconSearchElement;
+    "icon-search": HTMLIconSearchElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "icon-search": JSXElements.IconSearchAttributes;
-      }
+    interface IntrinsicElements {
+      "icon-search": JSXElements.IconSearchAttributes;
+    }
   }
   namespace JSXElements {
-      export interface IconSearchAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-      }
+    export interface IconSearchAttributes extends HTMLAttributes {
+      
+    }
   }
 }
 
@@ -41,30 +39,28 @@ import {
   LandingPage as LandingPage
 } from './components/landing-page/landing-page';
 
-interface HTMLLandingPageElement extends LandingPage, HTMLElement {
-}
-declare var HTMLLandingPageElement: {
-  prototype: HTMLLandingPageElement;
-  new (): HTMLLandingPageElement;
-};
 declare global {
+  interface HTMLLandingPageElement extends LandingPage, HTMLElement {
+  }
+  var HTMLLandingPageElement: {
+    prototype: HTMLLandingPageElement;
+    new (): HTMLLandingPageElement;
+  };
   interface HTMLElementTagNameMap {
-      "landing-page": HTMLLandingPageElement;
+    "landing-page": HTMLLandingPageElement;
   }
   interface ElementTagNameMap {
-      "landing-page": HTMLLandingPageElement;
+    "landing-page": HTMLLandingPageElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "landing-page": JSXElements.LandingPageAttributes;
-      }
+    interface IntrinsicElements {
+      "landing-page": JSXElements.LandingPageAttributes;
+    }
   }
   namespace JSXElements {
-      export interface LandingPageAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-      }
+    export interface LandingPageAttributes extends HTMLAttributes {
+      
+    }
   }
 }
 

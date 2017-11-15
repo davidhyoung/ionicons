@@ -1,5 +1,5 @@
 /*! Built with http://stenciljs.com */
-(function (window, document, appNamespace, publicPath, appCore, appCorePolyfilled, components, x, i) {
+(function (window, document, appNamespace, publicPath, appCore, appCoreSsr, appCorePolyfilled, components, x, i) {
     'use strict';
     // create global namespace if it doesn't already exist
     (window[appNamespace] = window[appNamespace] || {}).components = components = components || [];
@@ -27,8 +27,8 @@
     // if either of those are not supported, then use the core w/ polyfills
     // also check if the page was build with ssr or not
     x = document.createElement('script');
-    x.src = publicPath + ((window.customElements && window.fetch) ? appCore : appCorePolyfilled);
+    x.src = publicPath + (('noModule' in x && window.customElements && window.fetch) ? (document.documentElement.hasAttribute('data-ssr') ? appCoreSsr : appCore) : appCorePolyfilled);
     x.setAttribute('data-path', publicPath);
     x.setAttribute('data-core', appCore);
     document.head.appendChild(x);
-})(window, document, "DocsSite","/build/docssite/","docssite.core.js","docssite.core.pf.js",[["icon-search","icon-search",1,0,0,0,[["focusin","focusin"],["focusout","focusout"],["keyup","keyup"]]],["landing-page","landing-page",1]]);
+})(window, document, "DocsSite","/build/docssite/","docssite.core.js","docssite.core.ssr.js","es5-build-disabled.js",[["icon-search",["icon-search",null],1,0,0,0,[["focusin","focusin"],["focusout","focusout"],["keyup","keyup"]]],["landing-page",["landing-page",null],1]]);

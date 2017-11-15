@@ -11,10 +11,8 @@ function importComponent(exports, h, Context, publicPath) {
 "use strict";
 // @stencil/core
 
-var LandingPage = /** @class */ (function () {
-    function LandingPage() {
-    }
-    LandingPage.prototype.render = function () {
+class LandingPage {
+    render() {
         return h("div", null,
             h("h1", null,
                 "The premium icon pack for ",
@@ -29,9 +27,8 @@ var LandingPage = /** @class */ (function () {
                 h("span", { class: "github-star" },
                     h("iframe", { src: "http://ghbtns.com/github-btn.html?user=ionic-team&repo=ionicons&type=watch&count=true", allowtransparency: "true", frameborder: "0", scrolling: "0", width: "110", height: "20" }))),
             h("icon-search", null));
-    };
-    return LandingPage;
-}());
+    }
+}
 
 exports['landing-page'] = LandingPage;
 },
