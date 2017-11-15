@@ -6,3 +6,8 @@ exports.config = {
   srcDir: 'src/components/',
   emptyDistDir: false
 };
+
+exports.devServer = {
+  root: 'docs',
+  watchGlob: '**/**'
+};
