@@ -151,17 +151,23 @@ def generate_svg_files():
 
   for filename in os.listdir(OUTPUT_SVG_DIR):
     svg_path = os.path.join(OUTPUT_SVG_DIR, filename)
-    svg_file = codecs.open(svg_path, 'r+', 'utf-8')
-    svg_text = svg_file.read()
-    svg_file.seek(0)
+    svg_read_file = open(svg_path, 'r')
+    svg_text = svg_read_file.read()
 
     svg_text = svg_text.replace(' width="512px"', '')
     svg_text = svg_text.replace(' width="512"', '')
     svg_text = svg_text.replace(' height="512px"', '')
     svg_text = svg_text.replace(' height="512"', '')
 
-    svg_file.write(svg_text)
-    svg_file.close()
+    if 'viewBox="0 0 512 512"' not in svg_text:
+      svg_text = svg_text.replace('xmlns="http://www.w3.org/2000/svg"', 'xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"')
+
+    if 'ios-american' in filename:
+      print svg_text
+
+    svg_write_file = open(svg_path, 'w')
+    svg_write_file.write(svg_text)
+    svg_write_file.close()
 
 
 def rename_svg_glyph_names(data):

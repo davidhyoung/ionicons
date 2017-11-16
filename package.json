@@ -30,7 +30,7 @@
     "fs-extra": "4.0.2",
     "np": "2.16.0",
     "svg2png": "4.1.1",
-    "svgo": "0.6.1"
+    "svgo": "1.0.3"
   },
   "keywords": [
     "ionicons",
