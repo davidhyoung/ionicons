@@ -162,9 +162,6 @@ def generate_svg_files():
     if 'viewBox="0 0 512 512"' not in svg_text:
       svg_text = svg_text.replace('xmlns="http://www.w3.org/2000/svg"', 'xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"')
 
-    if 'ios-american' in filename:
-      print svg_text
-
     svg_write_file = open(svg_path, 'w')
     svg_write_file.write(svg_text)
     svg_write_file.close()
