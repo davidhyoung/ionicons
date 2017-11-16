@@ -63,16 +63,32 @@
       "name": "ios-arrow-dropdown"
     },
     {
+      "code": "0xf125",
+      "name": "ios-arrow-dropdown-circle"
+    },
+    {
       "code": "0xf112",
       "name": "ios-arrow-dropleft"
+    },
+    {
+      "code": "0xf129",
+      "name": "ios-arrow-dropleft-circle"
     },
     {
       "code": "0xf114",
       "name": "ios-arrow-dropright"
     },
     {
+      "code": "0xf12b",
+      "name": "ios-arrow-dropright-circle"
+    },
+    {
       "code": "0xf116",
       "name": "ios-arrow-dropup"
+    },
+    {
+      "code": "0xf12d",
+      "name": "ios-arrow-dropup-circle"
     },
     {
       "code": "0xf3d1",
@@ -479,6 +495,10 @@
       "name": "ios-flash"
     },
     {
+      "code": "0xf12f",
+      "name": "ios-flash-off"
+    },
+    {
       "code": "0xf431",
       "name": "ios-flask"
     },
@@ -565,6 +585,10 @@
     {
       "code": "0xf443",
       "name": "ios-heart"
+    },
+    {
+      "code": "0xf131",
+      "name": "ios-heart-off"
     },
     {
       "code": "0xf446",
@@ -759,6 +783,10 @@
       "name": "ios-notifications-off"
     },
     {
+      "code": "0xf133",
+      "name": "ios-notifications-outline"
+    },
+    {
       "code": "0xf1d5",
       "name": "ios-nuclear"
     },
@@ -917,6 +945,10 @@
     {
       "code": "0xf49c",
       "name": "ios-refresh"
+    },
+    {
+      "code": "0xf135",
+      "name": "ios-refresh-circle"
     },
     {
       "code": "0xf1fc",

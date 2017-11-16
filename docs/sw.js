@@ -24,7 +24,7 @@ const fileManifest = [
   },
   {
     "url": "build/data.json",
-    "revision": "661f2bada0cc38ded351c9cd4692d079"
+    "revision": "2d5f6cebf4dd05bdb1d7996da3790771"
   },
   {
     "url": "build/docssite.js",
@@ -144,7 +144,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-archive.js",
-    "revision": "c44a9e140e05d199644e5659df7b2b37"
+    "revision": "268a81bca25b7a4ad5cb1223b79920c3"
   },
   {
     "url": "build/ionicons/svg/ios-arrow-back.js",
@@ -155,20 +155,36 @@ const fileManifest = [
     "revision": "5bf21f4570772cbcc62d8587f6140abb"
   },
   {
+    "url": "build/ionicons/svg/ios-arrow-dropdown-circle.js",
+    "revision": "69d3d8edd57038bdd608394a137c377e"
+  },
+  {
     "url": "build/ionicons/svg/ios-arrow-dropdown.js",
-    "revision": "74058bf163d66da08848d1acb293d2a1"
+    "revision": "77e9ccfe43c29eb1f5335ae8c42a3c08"
+  },
+  {
+    "url": "build/ionicons/svg/ios-arrow-dropleft-circle.js",
+    "revision": "48159ca1fa6f66363d571a7d1553645b"
   },
   {
     "url": "build/ionicons/svg/ios-arrow-dropleft.js",
-    "revision": "8954f0fe7ce64b8614af074cffb9b5ee"
+    "revision": "1c71568731ccce4da61f9f4c80f6b27e"
+  },
+  {
+    "url": "build/ionicons/svg/ios-arrow-dropright-circle.js",
+    "revision": "d996fc155d7467f798418112b921ee11"
   },
   {
     "url": "build/ionicons/svg/ios-arrow-dropright.js",
-    "revision": "237873637eabbf183ecaa5c42e811e11"
+    "revision": "be3a7ab1e03137fe6abdac561cec42dd"
+  },
+  {
+    "url": "build/ionicons/svg/ios-arrow-dropup-circle.js",
+    "revision": "a5619adaf10b45e489053a2250455da8"
   },
   {
     "url": "build/ionicons/svg/ios-arrow-dropup.js",
-    "revision": "164e180ad3d9197380fa275cb3788426"
+    "revision": "f5f7a773a55331493a065751fd71aa88"
   },
   {
     "url": "build/ionicons/svg/ios-arrow-forward.js",
@@ -176,19 +192,19 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-arrow-round-back.js",
-    "revision": "5ac02856c3c500ff429299a1c5e60c34"
+    "revision": "f7e4d1857a3736c197f2d4aaa0a5bb01"
   },
   {
     "url": "build/ionicons/svg/ios-arrow-round-down.js",
-    "revision": "629c86b217d62077df1bee9bb590a43e"
+    "revision": "f12cbebed890f1a20722b5461ec55bd8"
   },
   {
     "url": "build/ionicons/svg/ios-arrow-round-forward.js",
-    "revision": "4c9869128e70c228f0acfa9f0d65cdf3"
+    "revision": "b81cc459112544cec92506209744ac10"
   },
   {
     "url": "build/ionicons/svg/ios-arrow-round-up.js",
-    "revision": "b563866d299e329e81aedcb6ce005b21"
+    "revision": "247d271b4bca74cec2b4683653ca84ee"
   },
   {
     "url": "build/ionicons/svg/ios-arrow-up.js",
@@ -208,7 +224,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-barcode.js",
-    "revision": "6cc16548e86fea9cb5f708c6f7d044b8"
+    "revision": "9dd4c60b5a2a7031f71819333a008a2e"
   },
   {
     "url": "build/ionicons/svg/ios-baseball.js",
@@ -272,7 +288,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-bookmarks.js",
-    "revision": "0ea1c7137874b4e68124502ae46a4da5"
+    "revision": "389323bc0ebc68fc0fec6cca1acf6bf7"
   },
   {
     "url": "build/ionicons/svg/ios-bowtie.js",
@@ -280,11 +296,11 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-briefcase.js",
-    "revision": "1650112e998bfdcf141ac69070c8c769"
+    "revision": "ea35e509c7254b4d86eee52a6cbee5fd"
   },
   {
     "url": "build/ionicons/svg/ios-browsers.js",
-    "revision": "bc64576ace776a5040dfd5c35b19ee00"
+    "revision": "39394ecddc0a289c1228eba593a3cc57"
   },
   {
     "url": "build/ionicons/svg/ios-brush.js",
@@ -300,7 +316,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-bulb.js",
-    "revision": "9ad2bf73a75427e2327cc6fd9c4cbc8b"
+    "revision": "f1a05556ef30e2557e068daaf48f26f2"
   },
   {
     "url": "build/ionicons/svg/ios-bus.js",
@@ -312,7 +328,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-calculator.js",
-    "revision": "c76d518a85d1a07279973339e9f11652"
+    "revision": "0e3cc186f1bf50bf2ad89b732a8666dd"
   },
   {
     "url": "build/ionicons/svg/ios-calendar.js",
@@ -324,7 +340,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-camera.js",
-    "revision": "4989ea4adfcd4755ccb3343658fcfabc"
+    "revision": "68fb49dbfd34bf2b1cf6f3bf410b979c"
   },
   {
     "url": "build/ionicons/svg/ios-car.js",
@@ -344,7 +360,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-chatboxes.js",
-    "revision": "da570037c326709e4373298064e6304c"
+    "revision": "2573bbd77e49b12c59c153f2ab3c2108"
   },
   {
     "url": "build/ionicons/svg/ios-chatbubbles.js",
@@ -376,19 +392,19 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-clock.js",
-    "revision": "a719aab918857342f75a8233317c8f2e"
+    "revision": "68717ba81cd95fcd7aa669ced55e6cab"
   },
   {
     "url": "build/ionicons/svg/ios-close-circle-outline.js",
-    "revision": "4775424c7d7c8b5a8e4a938a31becb78"
+    "revision": "a4f69817088302a6feeb89629d549493"
   },
   {
     "url": "build/ionicons/svg/ios-close-circle.js",
-    "revision": "47b60f0b50d408cd5d4eac68393148b4"
+    "revision": "6fe43c5d44c417ea78825fe5204baee0"
   },
   {
     "url": "build/ionicons/svg/ios-close.js",
-    "revision": "26628794d1d61b3af1e0b0c7f8058c48"
+    "revision": "c22f4ed0539936ed40e01d363f4aa9f9"
   },
   {
     "url": "build/ionicons/svg/ios-cloud-circle.js",
@@ -436,7 +452,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-cog.js",
-    "revision": "b189752c61238d06db17560234da4680"
+    "revision": "339283ad2dc5b8885d21143d40d8aa95"
   },
   {
     "url": "build/ionicons/svg/ios-color-fill.js",
@@ -484,7 +500,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-create.js",
-    "revision": "37ba305b8e0d8f2a46dac09bcd0105b2"
+    "revision": "b87e83f13083854f5edfa8aaf48934e8"
   },
   {
     "url": "build/ionicons/svg/ios-crop.js",
@@ -536,11 +552,11 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-eye-off.js",
-    "revision": "92c504849a10f007906ed4990194a767"
+    "revision": "ccc1ff4d84d79514534183073c428f07"
   },
   {
     "url": "build/ionicons/svg/ios-eye.js",
-    "revision": "9d0f827969cded5e5019a56bac267ca1"
+    "revision": "1205ab235a316aa2c303259616a4ce34"
   },
   {
     "url": "build/ionicons/svg/ios-fastforward.js",
@@ -552,7 +568,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-filing.js",
-    "revision": "fb4a38d64a8c3c3f74ee91f11b907fc5"
+    "revision": "57f89b961b23d667bcfb6f0d7b05ad12"
   },
   {
     "url": "build/ionicons/svg/ios-film.js",
@@ -560,19 +576,23 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-finger-print.js",
-    "revision": "2d85757bb5eccbdacf9acd45bb1be4f3"
+    "revision": "fde5328e0e264c6f825ad90f68ad8929"
   },
   {
     "url": "build/ionicons/svg/ios-flag.js",
-    "revision": "bd23bffbea23cf934bfe725623acc957"
+    "revision": "49532b2cea84c1bd369fac18c23a9244"
   },
   {
     "url": "build/ionicons/svg/ios-flame.js",
     "revision": "c1c530383827226ac14bb341a2d7375e"
   },
   {
+    "url": "build/ionicons/svg/ios-flash-off.js",
+    "revision": "bf241c58edd914e85476b32a3f89dffa"
+  },
+  {
     "url": "build/ionicons/svg/ios-flash.js",
-    "revision": "61954e6afb045c9358308299bd95b4dd"
+    "revision": "0d958dc8680f5b884925a84374a3ff76"
   },
   {
     "url": "build/ionicons/svg/ios-flask.js",
@@ -588,7 +608,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-folder.js",
-    "revision": "4fde930ed22d7bf613a21c7770764767"
+    "revision": "973141ba95a8cec5cd72663fd3a61437"
   },
   {
     "url": "build/ionicons/svg/ios-football.js",
@@ -659,8 +679,12 @@ const fileManifest = [
     "revision": "96a3f59c47ea7c8907257f9736671744"
   },
   {
+    "url": "build/ionicons/svg/ios-heart-off.js",
+    "revision": "22401aa9e7b272652d4d9aaf1baae3d9"
+  },
+  {
     "url": "build/ionicons/svg/ios-heart.js",
-    "revision": "621369fb0c27bfd2a855e24e123ceef2"
+    "revision": "7a5f3750a7945f4ef7e537e91085f36b"
   },
   {
     "url": "build/ionicons/svg/ios-help-buoy.js",
@@ -776,7 +800,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-mail.js",
-    "revision": "fd9536c6b92c36c55484c7868e3acccc"
+    "revision": "6aec3ab68bbc9751c07e1f811cba6a4d"
   },
   {
     "url": "build/ionicons/svg/ios-male.js",
@@ -800,7 +824,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-medkit.js",
-    "revision": "02e76a85a39786c2be8d52233d02d280"
+    "revision": "a540454258116984b52be3fc50f19889"
   },
   {
     "url": "build/ionicons/svg/ios-megaphone.js",
@@ -824,7 +848,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-moon.js",
-    "revision": "5ac9b736666f63106d8e6f31b0e1ee3c"
+    "revision": "710771399a0d513a7960db25dde6b943"
   },
   {
     "url": "build/ionicons/svg/ios-more.js",
@@ -848,11 +872,15 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-notifications-off.js",
-    "revision": "4f3bb1c017523437d9589877ab65db18"
+    "revision": "7b2fb3ab7586e2cfc9f2590355b01917"
+  },
+  {
+    "url": "build/ionicons/svg/ios-notifications-outline.js",
+    "revision": "9156d076e23e90a3e3dbaa6102a325cb"
   },
   {
     "url": "build/ionicons/svg/ios-notifications.js",
-    "revision": "4e2cf4f2c947c0d60af78b3eda013a8b"
+    "revision": "d1253986b2f0cc721e083343955598a0"
   },
   {
     "url": "build/ionicons/svg/ios-nuclear.js",
@@ -880,11 +908,11 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-paper.js",
-    "revision": "bae4f0fa2066bcf12e58dd78111a02f9"
+    "revision": "e8ea80b4a4f98d68469772676d71c854"
   },
   {
     "url": "build/ionicons/svg/ios-partly-sunny.js",
-    "revision": "80e5aff7023ceaeca1040ac3da2e4f10"
+    "revision": "976d65fdbf30e44f6f20c9dfaca151b6"
   },
   {
     "url": "build/ionicons/svg/ios-pause.js",
@@ -896,15 +924,15 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-people.js",
-    "revision": "e957f38d1a04d1f9bb95c7d7ac3f72e0"
+    "revision": "d227bb9d82f3c60da3ab54b99e1081b5"
   },
   {
     "url": "build/ionicons/svg/ios-person-add.js",
-    "revision": "7a7ee9a331025a77d03dda3be8c3b36f"
+    "revision": "a46aac435548d579ff64daaa1d9154d9"
   },
   {
     "url": "build/ionicons/svg/ios-person.js",
-    "revision": "ec44010ab6fa1f5ddd290e527ef3e7bc"
+    "revision": "dd6b5b675e3b64ce910b770eff98fc8a"
   },
   {
     "url": "build/ionicons/svg/ios-phone-landscape.js",
@@ -924,7 +952,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-pie.js",
-    "revision": "333c83aed43757b2d8a0d796c6ecf933"
+    "revision": "db2473bf74931463bc5417f75514941d"
   },
   {
     "url": "build/ionicons/svg/ios-pin.js",
@@ -932,7 +960,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-pint.js",
-    "revision": "863dfdc1ba83f29e1c5a14c955f76074"
+    "revision": "c4c27b1a27c24482e215bb1807b91c5a"
   },
   {
     "url": "build/ionicons/svg/ios-pizza.js",
@@ -964,11 +992,11 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-pricetag.js",
-    "revision": "95ddf202db66a904995e611a07320ec3"
+    "revision": "250e18f6f67dd5aa1bcbebba589afd4b"
   },
   {
     "url": "build/ionicons/svg/ios-pricetags.js",
-    "revision": "79a4d740a08ff781a2864f89b6355f6d"
+    "revision": "fa98c4c2665d110a07a6a913f9162753"
   },
   {
     "url": "build/ionicons/svg/ios-print.js",
@@ -976,7 +1004,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-pulse.js",
-    "revision": "4b97bb139452c5a80026d5a7ff58fc5b"
+    "revision": "76c1cba49559cceae1fc7d09d448b94c"
   },
   {
     "url": "build/ionicons/svg/ios-qr-scanner.js",
@@ -1000,7 +1028,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-rainy.js",
-    "revision": "8f84237180359117f937b719d45585c9"
+    "revision": "0673033d2a78e8b4cb166bd982d45e9c"
   },
   {
     "url": "build/ionicons/svg/ios-recording.js",
@@ -1008,11 +1036,15 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-redo.js",
-    "revision": "54cc349c2dc427c1cabb57667bd80112"
+    "revision": "2b5cab6d207b6d99f0e7dd548eb7c77e"
+  },
+  {
+    "url": "build/ionicons/svg/ios-refresh-circle.js",
+    "revision": "6cc132e71788c7aa8bdfcb4270e9a29d"
   },
   {
     "url": "build/ionicons/svg/ios-refresh.js",
-    "revision": "94c2f5bf96be4c2d9f01ab7a543e3608"
+    "revision": "f0b04840f8b16391a7a239a09c54e873"
   },
   {
     "url": "build/ionicons/svg/ios-remove-circle-outline.js",
@@ -1052,7 +1084,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-reverse-camera.js",
-    "revision": "cabc4a2dec47f57803e76ff26d92b5a1"
+    "revision": "c99aae183690801c0d37eeba90304b71"
   },
   {
     "url": "build/ionicons/svg/ios-rewind.js",
@@ -1080,7 +1112,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-send.js",
-    "revision": "b075130463f69f13b8e9ff5b292da920"
+    "revision": "7d761e8918a00d8c0cb7e9d901f39d40"
   },
   {
     "url": "build/ionicons/svg/ios-settings.js",
@@ -1116,7 +1148,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-speedometer.js",
-    "revision": "09dcb84816e54eda158afd495f87c4b0"
+    "revision": "d08f070381e1709db06f4974c42a2244"
   },
   {
     "url": "build/ionicons/svg/ios-square.js",
@@ -1148,7 +1180,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-sunny.js",
-    "revision": "4bd4c38ec9ac3dcc33e9c5cc6ac33e08"
+    "revision": "ebf3b4ee89d4adf9e801aefdbed689ab"
   },
   {
     "url": "build/ionicons/svg/ios-swap.js",
@@ -1176,7 +1208,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-text.js",
-    "revision": "ec81e49de6412d9b4e0ea01753c4f418"
+    "revision": "406e547480acbe0dab2e309f3c872c41"
   },
   {
     "url": "build/ionicons/svg/ios-thermometer.js",
@@ -1192,7 +1224,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-thunderstorm.js",
-    "revision": "49066dafdee223743e806b57ed408934"
+    "revision": "9ace3a71d73e80f434bb9f43ab281ac2"
   },
   {
     "url": "build/ionicons/svg/ios-time.js",
@@ -1236,7 +1268,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-undo.js",
-    "revision": "845258f9726f8a7f89310f615d63f48c"
+    "revision": "2c84279081ee3a9005a5c34f6c6ed7e8"
   },
   {
     "url": "build/ionicons/svg/ios-unlock.js",
@@ -1296,7 +1328,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-wine.js",
-    "revision": "6ba4cfdf3654c02568b2e4c065e71a33"
+    "revision": "f485d97ab6c2acc8ee3d7a6685706f29"
   },
   {
     "url": "build/ionicons/svg/ios-woman.js",
@@ -2720,7 +2752,7 @@ const fileManifest = [
   },
   {
     "url": "cheatsheet.html",
-    "revision": "451c0ded4558db567956f37345dcfea0"
+    "revision": "4e99d6324381045bb4f77577bcfd2c71"
   },
   {
     "url": "index.html",

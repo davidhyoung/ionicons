@@ -279,6 +279,23 @@
       }
     ]
   },
+  "arrow-dropdown-circle": {
+    "tags": [
+      "arrow",
+      "circle",
+      "dropdown"
+    ],
+    "icons": [
+      {
+        "code": "0xf125",
+        "name": "ios-arrow-dropdown-circle"
+      },
+      {
+        "code": "0xf27f",
+        "name": "md-arrow-dropdown-circle"
+      }
+    ]
+  },
   "arrow-dropleft": {
     "tags": [
       "arrow",
@@ -292,6 +309,23 @@
       {
         "code": "0xf282",
         "name": "md-arrow-dropleft"
+      }
+    ]
+  },
+  "arrow-dropleft-circle": {
+    "tags": [
+      "arrow",
+      "circle",
+      "dropleft"
+    ],
+    "icons": [
+      {
+        "code": "0xf129",
+        "name": "ios-arrow-dropleft-circle"
+      },
+      {
+        "code": "0xf281",
+        "name": "md-arrow-dropleft-circle"
       }
     ]
   },
@@ -311,6 +345,23 @@
       }
     ]
   },
+  "arrow-dropright-circle": {
+    "tags": [
+      "arrow",
+      "circle",
+      "dropright"
+    ],
+    "icons": [
+      {
+        "code": "0xf12b",
+        "name": "ios-arrow-dropright-circle"
+      },
+      {
+        "code": "0xf283",
+        "name": "md-arrow-dropright-circle"
+      }
+    ]
+  },
   "arrow-dropup": {
     "tags": [
       "arrow",
@@ -324,6 +375,23 @@
       {
         "code": "0xf286",
         "name": "md-arrow-dropup"
+      }
+    ]
+  },
+  "arrow-dropup-circle": {
+    "tags": [
+      "arrow",
+      "circle",
+      "dropup"
+    ],
+    "icons": [
+      {
+        "code": "0xf12d",
+        "name": "ios-arrow-dropup-circle"
+      },
+      {
+        "code": "0xf285",
+        "name": "md-arrow-dropup-circle"
       }
     ]
   },
@@ -3467,6 +3535,22 @@
       }
     ]
   },
+  "notifications-outline": {
+    "tags": [
+      "notifications",
+      "outline"
+    ],
+    "icons": [
+      {
+        "code": "0xf133",
+        "name": "ios-notifications-outline"
+      },
+      {
+        "code": "0xf337",
+        "name": "md-notifications-outline"
+      }
+    ]
+  },
   "nuclear": {
     "tags": [
       "danger",
@@ -4192,6 +4276,22 @@
       {
         "code": "0xf366",
         "name": "md-refresh"
+      }
+    ]
+  },
+  "refresh-circle": {
+    "tags": [
+      "circle",
+      "refresh"
+    ],
+    "icons": [
+      {
+        "code": "0xf135",
+        "name": "ios-refresh-circle"
+      },
+      {
+        "code": "0xf228",
+        "name": "md-refresh-circle"
       }
     ]
   },
