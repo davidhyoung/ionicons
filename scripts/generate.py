@@ -144,8 +144,24 @@ def generate_svg_files():
   shutil.rmtree(OUTPUT_SVG_DIR)
   if not os.path.exists(OUTPUT_SVG_DIR):
     os.makedirs(OUTPUT_SVG_DIR)
+
   cmd = 'svgo -f %s -o %s' % (INPUT_SVG_DIR, OUTPUT_SVG_DIR)
-  subprocess.call([cmd], shell=True)
+  cwd = os.path.join(os.path.dirname(__file__), '../node_modules/svgo/bin')
+  subprocess.call([cmd], shell=True, cwd=cwd)
+
+  for filename in os.listdir(OUTPUT_SVG_DIR):
+    svg_path = os.path.join(OUTPUT_SVG_DIR, filename)
+    svg_file = codecs.open(svg_path, 'r+', 'utf-8')
+    svg_text = svg_file.read()
+    svg_file.seek(0)
+
+    svg_text = svg_text.replace(' width="512px"', '')
+    svg_text = svg_text.replace(' width="512"', '')
+    svg_text = svg_text.replace(' height="512px"', '')
+    svg_text = svg_text.replace(' height="512"', '')
+
+    svg_file.write(svg_text)
+    svg_file.close()
 
 
 def rename_svg_glyph_names(data):
