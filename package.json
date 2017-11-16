@@ -23,7 +23,7 @@
     "start": "npm run dev"
   },
   "devDependencies": {
-    "@ionic/jpml": "0.0.5",
+    "@ionic/jpml": "latest",
     "@stencil/core": "next",
     "@stencil/dev-server": "latest",
     "@stencil/utils": "latest",
