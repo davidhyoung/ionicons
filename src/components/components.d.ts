@@ -9,34 +9,32 @@ import {
   Icon as IonIcon
 } from './icon/icon';
 
-interface HTMLIonIconElement extends IonIcon, HTMLElement {
-}
-declare var HTMLIonIconElement: {
-  prototype: HTMLIonIconElement;
-  new (): HTMLIonIconElement;
-};
 declare global {
+  interface HTMLIonIconElement extends IonIcon, HTMLElement {
+  }
+  var HTMLIonIconElement: {
+    prototype: HTMLIonIconElement;
+    new (): HTMLIonIconElement;
+  };
   interface HTMLElementTagNameMap {
-      "ion-icon": HTMLIonIconElement;
+    "ion-icon": HTMLIonIconElement;
   }
   interface ElementTagNameMap {
-      "ion-icon": HTMLIonIconElement;
+    "ion-icon": HTMLIonIconElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "ion-icon": JSXElements.IonIconAttributes;
-      }
+    interface IntrinsicElements {
+      "ion-icon": JSXElements.IonIconAttributes;
+    }
   }
   namespace JSXElements {
-      export interface IonIconAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          ariaLabel?: string,
-          name?: string,
-          ios?: string,
-          md?: string
-      }
+    export interface IonIconAttributes extends HTMLAttributes {
+      
+        ariaLabel?: string,
+        name?: string,
+        ios?: string,
+        md?: string
+    }
   }
 }
 

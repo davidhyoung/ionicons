@@ -15,7 +15,6 @@ INPUT_SVG_DIR = os.path.join(SCRIPTS_FONT_DIR, '..', '..', 'src', 'svg')
 OUTPUT_FONT_DIR = os.path.join(SCRIPTS_FONT_DIR, '..', '..', 'dist', 'fonts')
 OUTPUT_IONICONS_FONT_DIR = os.path.join(OUTPUT_FONT_DIR, 'ionicons')
 MANIFEST_PATH = os.path.join(SCRIPTS_FONT_DIR, '..', 'manifest.json')
-BUILD_DATA_PATH = os.path.join(SCRIPTS_FONT_DIR, '..', 'build_data.json')
 AUTO_WIDTH = True
 KERNING = 15
 
@@ -61,9 +60,6 @@ for ionicon in manifest_data['icons']:
 
 manifest_data = copy.deepcopy(clean_manifest_data)
 
-build_data = copy.deepcopy(manifest_data)
-build_data['icons'] = []
-
 font_name = manifest_data['name']
 m.update(font_name + ';')
 m.update(manifest_data['prefix'] + ';')
@@ -104,21 +100,6 @@ for dirname, dirnames, filenames in os.walk(INPUT_SVG_DIR):
           'name': name,
           'code': chr_code
         })
-
-      build_data['icons'].append({
-        'name': name,
-        'code': chr_code
-      })
-
-      if 'ios-' in name and '-outline' not in name:
-          # check if this ios icon has an outline version
-          outline_filename = '%s-outline.svg' % (name)
-          outline_filePath = os.path.join(dirname, outline_filename)
-          if not os.path.isfile(outline_filePath):
-              build_data['icons'].append({
-                'name': '%s-outline' % (name),
-                'code': chr_code
-              })
 
       if ext in ['.svg']:
         # hack removal of <switch> </switch> tags
@@ -201,14 +182,8 @@ print 'Generate WOFF2 Font File'
 subprocess.call('woff2_compress ' + fontfile + '.ttf', shell=True)
 
 manifest_data['icons'] = sorted(manifest_data['icons'], key=lambda k: k['name'])
-build_data['icons'] = sorted(build_data['icons'], key=lambda k: k['name'])
 
 print "Save Manifest, Icons: %s" % ( len(manifest_data['icons']) )
 f = open(MANIFEST_PATH, 'w')
 f.write( json.dumps(manifest_data, indent=2, separators=(',', ': ')) )
-f.close()
-
-print "Save Build, Icons: %s" % ( len(build_data['icons']) )
-f = open(BUILD_DATA_PATH, 'w')
-f.write( json.dumps(build_data, indent=2, separators=(',', ': ')) )
 f.close()

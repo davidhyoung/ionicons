@@ -103,10 +103,6 @@ def generate_data_files(data):
             'name': 'ios-%s' % (icon_name)
           },
           {
-            'code': get_code_by_name('ios-%s-outline' % (icon_name)),
-            'name': 'ios-%s-outline' % (icon_name)
-          },
-          {
             'code': get_code_by_name('md-%s' % (icon_name)),
             'name': 'md-%s' % (icon_name)
           }
@@ -126,12 +122,6 @@ def generate_data_files(data):
         ],
         'tags': tag_data.get(icon_name) or icon_name.split('-')
       }
-
-    elif '-outline' in icon_name:
-      continue
-
-    else:
-      print 'wtf %s' % icon_name
 
   output = '{\n' +  ',\n'.join(mode_icons) + '\n}'
 
@@ -358,7 +348,7 @@ def generate_mode_cheatsheet(data):
     elif ionicon['name'].startswith('md-'):
       name = ionicon['name'][3:]
 
-    if name not in icon_names and not name.endswith('-outline'):
+    if name not in icon_names:
       icon_names.append(name)
 
 
@@ -452,9 +442,9 @@ def generate_icon_comparison(data):
 
 
 def get_build_data():
-  build_data_path = os.path.join(SCRIPTS_PATH, 'build_data.json')
+  manifest_path = os.path.join(SCRIPTS_PATH, 'manifest.json')
 
-  f = codecs.open(build_data_path, 'r', 'utf-8')
+  f = codecs.open(manifest_path, 'r', 'utf-8')
   data = json.loads(f.read())
   f.close()
 

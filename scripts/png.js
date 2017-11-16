@@ -49,7 +49,6 @@ function generatePng(pngFileName, sourceBuffer, hash, size) {
   try {
     const cachedFileContent = fs.readFileSync(cachedFilePath);
     fs.writeFileSync(pngFilePath, cachedFileContent);
-    console.log('png from cache', size, pngFileName);
 
   } catch (e) {
     const outputBuffer = svg2png.sync(sourceBuffer, { width: size, height: size });
