@@ -344,7 +344,7 @@ def generate_cheatsheet(data):
 
       content.append(item_row)
 
-  template_html = template_html.replace("{{title}}", 'Mode Cheatsheet')
+  template_html = template_html.replace("{{title}}", 'Cheatsheet')
   template_html = template_html.replace("{{font_name}}", data["name"])
   template_html = template_html.replace("{{font_version}}", data["version"])
   template_html = template_html.replace("{{icon_count}}", str(len(icon_names)) )

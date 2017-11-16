@@ -25,22 +25,15 @@
     a:hover, a:focus { color: #000; }
 
     header {
-      border-bottom: 2px solid #ddd;
-      margin-bottom: 20px;
       overflow: hidden;
       padding: 20px 0;
     }
 
-    header h1 {
+    h1 {
       color: #888;
       float: left;
-      font-size: 36px;
+      font-size: 24px;
       font-weight: 300;
-    }
-
-    header a {
-      float: right;
-      font-size: 14px;
     }
 
     main {
@@ -50,8 +43,7 @@
     }
 
     table {
-      margin: 0;
-      padding: 0;
+      width: 100%;
       border-spacing: 0;
     }
 
@@ -75,9 +67,14 @@
       text-align: left;
     }
 
+    ion-icon {
+      display: block;
+      min-height: 38px;
+    }
+
     ion-icon svg {
-      width: 24px;
-      height: 24px;
+      width: 32px;
+      height: 32px;
     }
 
     footer {
@@ -85,14 +82,27 @@
       font-size: 12px;
       padding: 20px 0;
     }
+
+    .heart {
+      display: inline-block;
+
+    }
+
+    .heart svg {
+      display: inline-block;
+      padding-top: 4px;
+      width: 18px;
+      height: 18px;
+      fill: red;
+    }
   </style>
-  <script src="ionicons.js"></script>
+  <script src="build/ionicons.js"></script>
 </head>
 
 <body>
   <main>
     <header>
-      <h1>{{font_name}} {{title}}, {{icon_count}} icons:</h1>
+      <h1>{{font_name}} {{title}}, {{icon_count}} icons</h1>
     </header>
     <table>
       <tr>
@@ -109,7 +119,7 @@
       {{content}}
     </table>
     <footer>
-      Made with love by the <a href="http://ionicframework.com/">Ionic Framework</a>
+      Made with <ion-icon class="heart" name="md-heart"></ion-icon> by the <a href="http://ionicframework.com/">Ionic Team</a>
     </footer>
   </main>
 </body>

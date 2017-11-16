@@ -1,4 +1,14 @@
-## Build Instructions
+## Build
+
+    npm run build
+
+
+# Cheatsheet
+
+  docs/cheatsheet.html
+
+
+## Install
 
 This repo already comes with all the files built and ready to go, but can also build the fonts from the source. Requires Python, FontForge, WOFF2, SVGO and Sass:
 

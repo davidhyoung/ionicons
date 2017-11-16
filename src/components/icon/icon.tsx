@@ -95,6 +95,7 @@ export class Icon {
         attrs['aria-label'] = iconName
                                 .replace('ios-', '')
                                 .replace('md-', '')
+                                .replace('-outline', '')
                                 .replace(/\-/g, ' ');
       }
     }
