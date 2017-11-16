@@ -99,9 +99,7 @@ export class Icon {
       }
     }
 
-    return {
-      attrs
-    };
+    return attrs;
   }
 
 

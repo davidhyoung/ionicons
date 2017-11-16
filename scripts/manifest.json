@@ -1,5 +1,4 @@
 {
-  "build_hash": "87bd7353d108e5a78efb63cf5011407e",
   "prefix": "ion-",
   "name": "Ionicons",
   "icons": [
@@ -856,6 +855,10 @@
       "name": "ios-play"
     },
     {
+      "code": "0xf113",
+      "name": "ios-play-circle"
+    },
+    {
       "code": "0xf1ed",
       "name": "ios-podium"
     },
@@ -1128,6 +1131,10 @@
       "name": "ios-trophy"
     },
     {
+      "code": "0xf115",
+      "name": "ios-tv"
+    },
+    {
       "code": "0xf25f",
       "name": "ios-umbrella"
     },
@@ -1146,6 +1153,18 @@
     {
       "code": "0xf262",
       "name": "ios-volume-down"
+    },
+    {
+      "code": "0xf11c",
+      "name": "ios-volume-high"
+    },
+    {
+      "code": "0xf11e",
+      "name": "ios-volume-low"
+    },
+    {
+      "code": "0xf123",
+      "name": "ios-volume-med"
     },
     {
       "code": "0xf263",

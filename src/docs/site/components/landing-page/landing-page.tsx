@@ -8,32 +8,25 @@ import { Component } from '@stencil/core';
 export class LandingPage {
 
   render() {
-    return <div>
+    return <main>
 
-      <h1>
-        The premium icon pack for <a href="http://ionicframework.com/">Ionic Framework</a>.
-      </h1>
+      <header>
+        <h1>
+          The premium icon pack for <a href="http://ionicframework.com/">Ionic Framework</a>.
+        </h1>
 
-      <h2>
-        100% free and open source. MIT Licensed.
-      </h2>
+        <h2>
+          100% free and open source. MIT Licensed.
+        </h2>
 
-      <div>
-        <span class="twitter-share">
-          <a href="https://twitter.com/share" class="twitter-share-button" data-via="ionicframework" data-hashtags="icons,webdev,mobile" data-related="benjsperry,maxlynch,adamdbradley,drifty">Tweet</a>
-        </span>
-        <span class="twitter-follow">
-          <a href="https://twitter.com/ionicframework" class="twitter-follow-button">Follow @ionicframework</a>
-        </span>
-        <span class="github-star">
-          <iframe src="http://ghbtns.com/github-btn.html?user=ionic-team&amp;repo=ionicons&amp;type=watch&amp;count=true"
-          allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-        </span>
-      </div>
+        <share-bar></share-bar>
+      </header>
 
       <icon-search></icon-search>
 
-    </div>
+      <footer-bar></footer-bar>
+
+    </main>
   }
 
 }

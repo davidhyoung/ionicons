@@ -10,9 +10,9 @@
   "types": "dist/collection/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "scripts": {
-    "build": "npm run build.icon && npm run generate && npm run svg-to-js && npm run png",
+    "build": "npm run build.icon && npm run generate && npm run svg-to-js && npm run png && npm run build.docs",
     "build.icon": "stencil build",
-    "build.docs": "stencil build --prerender --config src/docs/stencil.config.js",
+    "build.docs": "stencil build --config src/docs/stencil.config.js",
     "mode.comparison": "node scripts/mode-comparison.js",
     "dev": "sd concurrent \"stencil build --dev --config src/docs/stencil.config.js --watch\" \"stencil-dev-server\" ",
     "generate": "python scripts/generate.py",

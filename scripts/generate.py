@@ -43,8 +43,6 @@ def main():
   generate_scss(data)
   generate_svg_files()
   generate_cheatsheet(data)
-  generate_mode_cheatsheet(data)
-  generate_icon_comparison(data)
 
 
 def generate_font_files():
@@ -308,12 +306,12 @@ def generate_cheatsheet(data):
   f.close()
 
 
-def generate_mode_cheatsheet(data):
-  print "Generate Mode Cheatsheet"
+def generate_cheatsheet(data):
+  print "Generate Cheatsheet"
 
-  cheatsheet_file_path = os.path.join(DOCS_PATH, 'mode-cheatsheet.html')
+  cheatsheet_file_path = os.path.join(DOCS_PATH, 'cheatsheet.html')
   template_path = os.path.join(SRC_PATH, 'cheatsheet', 'template.html')
-  icon_row_path = os.path.join(SRC_PATH, 'cheatsheet', 'mode-icon-row.html')
+  icon_row_path = os.path.join(SRC_PATH, 'cheatsheet', 'icon-row.html')
 
   f = codecs.open(template_path, 'r', 'utf-8')
   template_html = f.read()
@@ -326,20 +324,6 @@ def generate_mode_cheatsheet(data):
   content = []
   icon_names = []
 
-  content.append('''
-  <div class="mode-row">
-    <div class="mode-col">
-      <strong>Icon Name</strong>
-    </div>
-    <div class="mode-col align-center">
-      <strong>iOS</strong>
-    </div>
-    <div class="mode-col align-center">
-      <strong>Material Design</strong>
-    </div>
-  </div>
-  ''')
-
   for ionicon in data['icons']:
     name = ""
     if ionicon['name'].startswith('ios-'):
@@ -351,12 +335,14 @@ def generate_mode_cheatsheet(data):
     if name not in icon_names:
       icon_names.append(name)
 
+  icon_names.sort()
 
   for icon_name in icon_names:
-    item_row = icon_row_template.replace('{{name}}', icon_name)
-    item_row = item_row.replace('{{prefix}}', data['prefix'])
+    if icon_name != "":
+      item_row = icon_row_template.replace('{{name}}', icon_name)
+      item_row = item_row.replace('{{prefix}}', data['prefix'])
 
-    content.append(item_row)
+      content.append(item_row)
 
   template_html = template_html.replace("{{title}}", 'Mode Cheatsheet')
   template_html = template_html.replace("{{font_name}}", data["name"])
@@ -365,78 +351,6 @@ def generate_mode_cheatsheet(data):
   template_html = template_html.replace("{{content}}", '\n'.join(content) )
 
   f = codecs.open(cheatsheet_file_path, 'w', 'utf-8')
-  f.write(template_html)
-  f.close()
-
-
-def generate_icon_comparison(data):
-  print "Generate Icon Comparison"
-
-  comparison_file_path = os.path.join(DOCS_PATH, 'icon-comparison.html')
-  template_path = os.path.join(SRC_PATH, 'cheatsheet', 'template.html')
-  icon_row_path = os.path.join(SRC_PATH, 'cheatsheet', 'icon-comparison-row.html')
-
-  f = codecs.open(template_path, 'r', 'utf-8')
-  template_html = f.read()
-  f.close()
-
-  f = codecs.open(icon_row_path, 'r', 'utf-8')
-  icon_row_template = f.read()
-  f.close()
-
-  content = []
-  icon_count = 0
-
-  content.append('''
-  <table class="comparison-table">
-    <tr class="comparison-row">
-      <td class="comparison-col">
-        <h2>Source SVG</h2>
-      </td>
-      <td class="comparison-col">
-        <h2>Optimized SVG</h2>
-      </td>
-      <td class="comparison-col">
-        <h2>Custom Element</h2>
-      </td>
-      <td class="comparison-col">
-        <h2>Icon Font</h2>
-      </td>
-      <td class="comparison-col">
-        <h2>PNG, 64x64</h2>
-      </td>
-    </tr>
-  ''')
-
-  for ionicon in data['icons']:
-    src_svg_file = os.path.join(INPUT_SVG_DIR, '%s.svg' % (ionicon['name']))
-    if not os.path.isfile(src_svg_file):
-      continue
-
-    icon_count += 1
-    item_row = icon_row_template.replace('{{name}}', ionicon['name'])
-    item_row = item_row.replace('{{prefix}}', data['prefix'])
-
-    src_svg = 'build/svg/%s.svg' % (ionicon['name'])
-    item_row = item_row.replace('{{src_svg}}', src_svg)
-
-    optimized_svg = 'build/svg/%s.svg' % (ionicon['name'])
-    item_row = item_row.replace('{{optimized_svg}}', optimized_svg)
-
-    png_64 = 'build/png/64/%s.png' % (ionicon['name'])
-    item_row = item_row.replace('{{png_64}}', png_64)
-
-    content.append(item_row)
-
-  content.append('</table>')
-
-  template_html = template_html.replace("{{title}}", 'Icon Format Comparison')
-  template_html = template_html.replace("{{font_name}}", data["name"])
-  template_html = template_html.replace("{{font_version}}", data["version"])
-  template_html = template_html.replace("{{icon_count}}", str(icon_count) )
-  template_html = template_html.replace("{{content}}", '\n'.join(content) )
-
-  f = codecs.open(comparison_file_path, 'w', 'utf-8')
   f.write(template_html)
   f.close()
 

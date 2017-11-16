@@ -139,10 +139,6 @@ for dirname, dirnames, filenames in os.walk(INPUT_SVG_DIR):
 
   fontfile = '%s/ionicons' % (OUTPUT_FONT_DIR)
 
-build_hash = m.hexdigest()
-
-manifest_data['build_hash'] = build_hash
-
 f.fontname = font_name
 f.familyname = font_name
 f.fullname = font_name

@@ -2,10 +2,18 @@
   "namespace": "DocsSite",
   "components": [
     [
+      "footer-bar",
+      [
+        "qlkdaov7",
+        "owcp4xz7"
+      ],
+      1
+    ],
+    [
       "icon-search",
       [
-        "icon-search",
-        null
+        "r8tgxnhs",
+        "kkji7jdg"
       ],
       1,
       0,
@@ -29,13 +37,21 @@
     [
       "landing-page",
       [
-        "landing-page",
-        null
+        "k43zacyc",
+        "uydchyoc"
+      ],
+      1
+    ],
+    [
+      "share-bar",
+      [
+        "uehmi4ed",
+        "v0gnp8pw"
       ],
       1
     ]
   ],
-  "core": "docssite.core.js",
-  "coreSsr": "docssite.core.ssr.js",
-  "corePolyfilled": "es5-build-disabled.js"
+  "core": "docssite.e926bixn.js",
+  "coreSsr": "docssite.9qasde7u.js",
+  "corePolyfilled": "docssite.e8mafr8h.js"
 }

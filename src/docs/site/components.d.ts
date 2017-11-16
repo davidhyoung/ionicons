@@ -6,6 +6,36 @@
 
 
 import {
+  FooterBar as FooterBar
+} from './components/footer-bar/footer-bar';
+
+declare global {
+  interface HTMLFooterBarElement extends FooterBar, HTMLElement {
+  }
+  var HTMLFooterBarElement: {
+    prototype: HTMLFooterBarElement;
+    new (): HTMLFooterBarElement;
+  };
+  interface HTMLElementTagNameMap {
+    "footer-bar": HTMLFooterBarElement;
+  }
+  interface ElementTagNameMap {
+    "footer-bar": HTMLFooterBarElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "footer-bar": JSXElements.FooterBarAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface FooterBarAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
   LandingPage as IconSearch
 } from './components/icon-search/icon-search';
 
@@ -59,6 +89,36 @@ declare global {
   }
   namespace JSXElements {
     export interface LandingPageAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
+  ShareBar as ShareBar
+} from './components/share-bar/share-bar';
+
+declare global {
+  interface HTMLShareBarElement extends ShareBar, HTMLElement {
+  }
+  var HTMLShareBarElement: {
+    prototype: HTMLShareBarElement;
+    new (): HTMLShareBarElement;
+  };
+  interface HTMLElementTagNameMap {
+    "share-bar": HTMLShareBarElement;
+  }
+  interface ElementTagNameMap {
+    "share-bar": HTMLShareBarElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "share-bar": JSXElements.ShareBarAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ShareBarAttributes extends HTMLAttributes {
       
     }
   }
