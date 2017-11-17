@@ -2876,12 +2876,8 @@
     ],
     "icons": [
       {
-        "code": "0xf1a1",
-        "name": "ios-ionic"
-      },
-      {
-        "code": "0xf313",
-        "name": "md-ionic"
+        "code": "0xf150",
+        "name": "logo-ionic"
       }
     ]
   },
@@ -2891,12 +2887,8 @@
     ],
     "icons": [
       {
-        "code": "0xf1a3",
-        "name": "ios-ionitron"
-      },
-      {
-        "code": "0xf314",
-        "name": "md-ionitron"
+        "code": "0xf151",
+        "name": "logo-ionitron"
       }
     ]
   },
@@ -3042,6 +3034,22 @@
       {
         "code": "0xf31b",
         "name": "md-list"
+      }
+    ]
+  },
+  "list-box": {
+    "tags": [
+      "box",
+      "list"
+    ],
+    "icons": [
+      {
+        "code": "0xf143",
+        "name": "ios-list-box"
+      },
+      {
+        "code": "0xf31a",
+        "name": "md-list-box"
       }
     ]
   },
@@ -3365,6 +3373,18 @@
       {
         "code": "0xf32d",
         "name": "md-microphone"
+      }
+    ]
+  },
+  "model-s": {
+    "tags": [
+      "model",
+      "s"
+    ],
+    "icons": [
+      {
+        "code": "0xf153",
+        "name": "logo-model-s"
       }
     ]
   },

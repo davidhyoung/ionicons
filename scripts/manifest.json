@@ -15,6 +15,10 @@
       "name": "ios-add-circle-outline"
     },
     {
+      "code": "0xf137",
+      "name": "ios-airplane"
+    },
+    {
       "code": "0xf3c8",
       "name": "ios-alarm"
     },
@@ -159,12 +163,20 @@
       "name": "ios-beaker"
     },
     {
+      "code": "0xf139",
+      "name": "ios-bed"
+    },
+    {
       "code": "0xf126",
       "name": "ios-beer"
     },
     {
       "code": "0xf127",
       "name": "ios-bicycle"
+    },
+    {
+      "code": "0xf13b",
+      "name": "ios-bike"
     },
     {
       "code": "0xf128",
@@ -261,6 +273,10 @@
     {
       "code": "0xf144",
       "name": "ios-cash"
+    },
+    {
+      "code": "0xf13d",
+      "name": "ios-cellular"
     },
     {
       "code": "0xf3fa",
@@ -427,6 +443,10 @@
       "name": "ios-disc"
     },
     {
+      "code": "0xf13f",
+      "name": "ios-dislike"
+    },
+    {
       "code": "0xf170",
       "name": "ios-document"
     },
@@ -497,6 +517,10 @@
     {
       "code": "0xf12f",
       "name": "ios-flash-off"
+    },
+    {
+      "code": "0xf141",
+      "name": "ios-flashlight"
     },
     {
       "code": "0xf431",
@@ -643,14 +667,6 @@
       "name": "ios-information-circle-outline"
     },
     {
-      "code": "0xf1a1",
-      "name": "ios-ionic"
-    },
-    {
-      "code": "0xf1a3",
-      "name": "ios-ionitron"
-    },
-    {
       "code": "0xf1a5",
       "name": "ios-jet"
     },
@@ -679,6 +695,10 @@
       "name": "ios-list"
     },
     {
+      "code": "0xf143",
+      "name": "ios-list-box"
+    },
+    {
       "code": "0xf1ae",
       "name": "ios-locate"
     },
@@ -705,6 +725,10 @@
     {
       "code": "0xf1b6",
       "name": "ios-mail-open"
+    },
+    {
+      "code": "0xf145",
+      "name": "ios-mail-unread"
     },
     {
       "code": "0xf1b9",
@@ -999,6 +1023,10 @@
       "name": "ios-ribbon"
     },
     {
+      "code": "0xf14b",
+      "name": "ios-rocket"
+    },
+    {
       "code": "0xf4a3",
       "name": "ios-rose"
     },
@@ -1137,6 +1165,10 @@
     {
       "code": "0xf4c1",
       "name": "ios-timer"
+    },
+    {
+      "code": "0xf14f",
+      "name": "ios-today"
     },
     {
       "code": "0xf258",
@@ -1331,6 +1363,14 @@
       "name": "logo-instagram"
     },
     {
+      "code": "0xf150",
+      "name": "logo-ionic"
+    },
+    {
+      "code": "0xf151",
+      "name": "logo-ionitron"
+    },
+    {
       "code": "0xf23f",
       "name": "logo-javascript"
     },
@@ -1341,6 +1381,10 @@
     {
       "code": "0xf241",
       "name": "logo-markdown"
+    },
+    {
+      "code": "0xf153",
+      "name": "logo-model-s"
     },
     {
       "code": "0xf109",
@@ -2073,14 +2117,6 @@
     {
       "code": "0xf311",
       "name": "md-information-circle"
-    },
-    {
-      "code": "0xf313",
-      "name": "md-ionic"
-    },
-    {
-      "code": "0xf314",
-      "name": "md-ionitron"
     },
     {
       "code": "0xf315",
