@@ -24,7 +24,7 @@ const fileManifest = [
   },
   {
     "url": "build/data.json",
-    "revision": "d795d2da11927dc9c501c1401b7e5c6f"
+    "revision": "91e6c2282a1ca03bb65a105eeca85837"
   },
   {
     "url": "build/docssite.js",
@@ -1595,12 +1595,20 @@ const fileManifest = [
     "revision": "51050be04b4622be87f6a538334f5f9f"
   },
   {
+    "url": "build/ionicons/svg/md-add-circle-outline.js",
+    "revision": "460250f292f9e8d72c194f85c5301900"
+  },
+  {
     "url": "build/ionicons/svg/md-add-circle.js",
     "revision": "9c4a27c10abb871e04469ee54b737595"
   },
   {
     "url": "build/ionicons/svg/md-add.js",
     "revision": "79fc1496a7fc9a9dcdd6312c9772cc48"
+  },
+  {
+    "url": "build/ionicons/svg/md-airplane.js",
+    "revision": "1f8fb2a330cc6801cf6aa8d79e7a7af8"
   },
   {
     "url": "build/ionicons/svg/md-alarm.js",

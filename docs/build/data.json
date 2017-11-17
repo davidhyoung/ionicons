@@ -33,6 +33,38 @@
       }
     ]
   },
+  "add-circle-outline": {
+    "tags": [
+      "add",
+      "circle",
+      "outline"
+    ],
+    "icons": [
+      {
+        "code": "0xf100",
+        "name": "ios-add-circle-outline"
+      },
+      {
+        "code": "0xf158",
+        "name": "md-add-circle-outline"
+      }
+    ]
+  },
+  "airplane": {
+    "tags": [
+      "airplane"
+    ],
+    "icons": [
+      {
+        "code": "0xf137",
+        "name": "ios-airplane"
+      },
+      {
+        "code": "0xf15a",
+        "name": "md-airplane"
+      }
+    ]
+  },
   "alarm": {
     "tags": [
       "alarm"

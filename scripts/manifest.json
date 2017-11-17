@@ -1507,6 +1507,14 @@
       "name": "md-add-circle"
     },
     {
+      "code": "0xf158",
+      "name": "md-add-circle-outline"
+    },
+    {
+      "code": "0xf15a",
+      "name": "md-airplane"
+    },
+    {
       "code": "0xf274",
       "name": "md-alarm"
     },
