@@ -528,7 +528,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-desktop.js",
-    "revision": "82ac24c646acbfb56c6c7aca059f6c94"
+    "revision": "04ea1cf06d7d679be66cdd412fe7f0fb"
   },
   {
     "url": "build/ionicons/svg/ios-disc.js",
