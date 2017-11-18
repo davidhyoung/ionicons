@@ -271,10 +271,6 @@ const fileManifest = [
     "revision": "be9e92ac42af7b159b01acc9ea84f3e8"
   },
   {
-    "url": "build/ionicons/svg/ios-bike.js",
-    "revision": "65c934f39148ebee20da144d32011607"
-  },
-  {
     "url": "build/ionicons/svg/ios-bluetooth.js",
     "revision": "62a1f290c60dc537d2e2278ad88a1618"
   },
@@ -703,10 +699,6 @@ const fileManifest = [
     "revision": "98df10f77f0f5da32fe6c5308da88607"
   },
   {
-    "url": "build/ionicons/svg/ios-heart-off.js",
-    "revision": "22401aa9e7b272652d4d9aaf1baae3d9"
-  },
-  {
     "url": "build/ionicons/svg/ios-heart.js",
     "revision": "7a5f3750a7945f4ef7e537e91085f36b"
   },
@@ -965,10 +957,6 @@ const fileManifest = [
   {
     "url": "build/ionicons/svg/ios-phone-portrait.js",
     "revision": "70c8b37e28363f56e0bc66b4d012188e"
-  },
-  {
-    "url": "build/ionicons/svg/ios-photos-outline.js",
-    "revision": "72c15dc5219b349b0f41fca5f9b917d7"
   },
   {
     "url": "build/ionicons/svg/ios-photos.js",
@@ -2203,10 +2191,6 @@ const fileManifest = [
     "revision": "1dc4b337fe16568c9acdfded0da42bc0"
   },
   {
-    "url": "build/ionicons/svg/md-heart-outline.js",
-    "revision": "511b3b025165296c929f15aa889e9985"
-  },
-  {
     "url": "build/ionicons/svg/md-heart.js",
     "revision": "e3e35367b1a8459fed498605ffb973ab"
   },
@@ -2860,7 +2844,7 @@ const fileManifest = [
   },
   {
     "url": "cheatsheet.html",
-    "revision": "ef1df01ec3b9e5876249925fbf332442"
+    "revision": "7c12d74af9b7ca620c401936457fce2e"
   },
   {
     "url": "index.html",

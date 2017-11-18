@@ -175,10 +175,6 @@
       "name": "ios-bicycle"
     },
     {
-      "code": "0xf13b",
-      "name": "ios-bike"
-    },
-    {
       "code": "0xf128",
       "name": "ios-bluetooth"
     },
@@ -611,10 +607,6 @@
       "name": "ios-heart"
     },
     {
-      "code": "0xf131",
-      "name": "ios-heart-off"
-    },
-    {
       "code": "0xf446",
       "name": "ios-help"
     },
@@ -873,10 +865,6 @@
     {
       "code": "0xf482",
       "name": "ios-photos"
-    },
-    {
-      "code": "0xf481",
-      "name": "ios-photos-outline"
     },
     {
       "code": "0xf484",
@@ -2109,10 +2097,6 @@
     {
       "code": "0xf308",
       "name": "md-heart"
-    },
-    {
-      "code": "0xf307",
-      "name": "md-heart-outline"
     },
     {
       "code": "0xf30b",
