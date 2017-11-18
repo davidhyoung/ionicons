@@ -704,6 +704,21 @@
       }
     ]
   },
+  "bed": {
+    "tags": [
+      "bed"
+    ],
+    "icons": [
+      {
+        "code": "0xf139",
+        "name": "ios-bed"
+      },
+      {
+        "code": "0xf160",
+        "name": "md-bed"
+      }
+    ]
+  },
   "beer": {
     "tags": [
       "beer",
@@ -1164,6 +1179,21 @@
       }
     ]
   },
+  "cellular": {
+    "tags": [
+      "cellular"
+    ],
+    "icons": [
+      {
+        "code": "0xf13d",
+        "name": "ios-cellular"
+      },
+      {
+        "code": "0xf164",
+        "name": "md-cellular"
+      }
+    ]
+  },
   "chatboxes": {
     "tags": [
       "chatboxes",
@@ -1349,6 +1379,23 @@
       {
         "code": "0xf2bf",
         "name": "md-close-circle"
+      }
+    ]
+  },
+  "close-circle-outline": {
+    "tags": [
+      "close",
+      "circle",
+      "outline"
+    ],
+    "icons": [
+      {
+        "code": "0xf14d",
+        "name": "ios-close-circle-outline"
+      },
+      {
+        "code": "0xf166",
+        "name": "md-close-circle-outline"
       }
     ]
   },
@@ -1894,6 +1941,21 @@
       }
     ]
   },
+  "dislike": {
+    "tags": [
+      "dislike"
+    ],
+    "icons": [
+      {
+        "code": "0xf13f",
+        "name": "ios-dislike"
+      },
+      {
+        "code": "0xf167",
+        "name": "md-dislike"
+      }
+    ]
+  },
   "document": {
     "tags": [
       "document",
@@ -2228,6 +2290,37 @@
       {
         "code": "0xf2f1",
         "name": "md-flash"
+      }
+    ]
+  },
+  "flash-off": {
+    "tags": [
+      "flash",
+      "off"
+    ],
+    "icons": [
+      {
+        "code": "0xf12f",
+        "name": "ios-flash-off"
+      },
+      {
+        "code": "0xf169",
+        "name": "md-flash-off"
+      }
+    ]
+  },
+  "flashlight": {
+    "tags": [
+      "flashlight"
+    ],
+    "icons": [
+      {
+        "code": "0xf141",
+        "name": "ios-flashlight"
+      },
+      {
+        "code": "0xf16b",
+        "name": "md-flashlight"
       }
     ]
   },
@@ -2742,6 +2835,23 @@
       }
     ]
   },
+  "help-circle-outline": {
+    "tags": [
+      "help",
+      "circle",
+      "outline"
+    ],
+    "icons": [
+      {
+        "code": "0xf197",
+        "name": "ios-help-circle-outline"
+      },
+      {
+        "code": "0xf16d",
+        "name": "md-help-circle-outline"
+      }
+    ]
+  },
   "home": {
     "tags": [
       "home",
@@ -2881,6 +2991,23 @@
       {
         "code": "0xf311",
         "name": "md-information-circle"
+      }
+    ]
+  },
+  "information-circle-outline": {
+    "tags": [
+      "information",
+      "circle",
+      "outline"
+    ],
+    "icons": [
+      {
+        "code": "0xf19f",
+        "name": "ios-information-circle-outline"
+      },
+      {
+        "code": "0xf16f",
+        "name": "md-information-circle-outline"
       }
     ]
   },
@@ -3198,6 +3325,22 @@
       {
         "code": "0xf321",
         "name": "md-mail-open"
+      }
+    ]
+  },
+  "mail-unread": {
+    "tags": [
+      "mail",
+      "unread"
+    ],
+    "icons": [
+      {
+        "code": "0xf145",
+        "name": "ios-mail-unread"
+      },
+      {
+        "code": "0xf172",
+        "name": "md-mail-unread"
       }
     ]
   },
@@ -4026,6 +4169,22 @@
       }
     ]
   },
+  "play-circle": {
+    "tags": [
+      "play",
+      "circle"
+    ],
+    "icons": [
+      {
+        "code": "0xf113",
+        "name": "ios-play-circle"
+      },
+      {
+        "code": "0xf174",
+        "name": "md-play-circle"
+      }
+    ]
+  },
   "playstation": {
     "tags": [
       "fun",
@@ -4057,6 +4216,17 @@
       {
         "code": "0xf358",
         "name": "md-podium"
+      }
+    ]
+  },
+  "polymer": {
+    "tags": [
+      "polymer"
+    ],
+    "icons": [
+      {
+        "code": "0xf15e",
+        "name": "logo-polymer"
       }
     ]
   },
@@ -4380,6 +4550,23 @@
       }
     ]
   },
+  "remove-circle-outline": {
+    "tags": [
+      "remove",
+      "circle",
+      "outline"
+    ],
+    "icons": [
+      {
+        "code": "0xf1fa",
+        "name": "ios-remove-circle-outline"
+      },
+      {
+        "code": "0xf176",
+        "name": "md-remove-circle-outline"
+      }
+    ]
+  },
   "reorder": {
     "tags": [
       "reorder"
@@ -4519,6 +4706,21 @@
       {
         "code": "0xf371",
         "name": "md-ribbon"
+      }
+    ]
+  },
+  "rocket": {
+    "tags": [
+      "rocket"
+    ],
+    "icons": [
+      {
+        "code": "0xf14b",
+        "name": "ios-rocket"
+      },
+      {
+        "code": "0xf179",
+        "name": "md-rocket"
       }
     ]
   },
@@ -4823,6 +5025,22 @@
       {
         "code": "0xf381",
         "name": "md-square"
+      }
+    ]
+  },
+  "square-outline": {
+    "tags": [
+      "square",
+      "outline"
+    ],
+    "icons": [
+      {
+        "code": "0xf15c",
+        "name": "ios-square-outline"
+      },
+      {
+        "code": "0xf380",
+        "name": "md-square-outline"
       }
     ]
   },
@@ -5172,6 +5390,21 @@
       }
     ]
   },
+  "today": {
+    "tags": [
+      "today"
+    ],
+    "icons": [
+      {
+        "code": "0xf14f",
+        "name": "ios-today"
+      },
+      {
+        "code": "0xf17d",
+        "name": "md-today"
+      }
+    ]
+  },
   "train": {
     "tags": [
       "train"
@@ -5296,6 +5529,21 @@
       {
         "code": "0xf2ae",
         "name": "logo-tux"
+      }
+    ]
+  },
+  "tv": {
+    "tags": [
+      "tv"
+    ],
+    "icons": [
+      {
+        "code": "0xf115",
+        "name": "ios-tv"
+      },
+      {
+        "code": "0xf17f",
+        "name": "md-tv"
       }
     ]
   },

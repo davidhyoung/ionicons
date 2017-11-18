@@ -24,7 +24,7 @@ const fileManifest = [
   },
   {
     "url": "build/data.json",
-    "revision": "91e6c2282a1ca03bb65a105eeca85837"
+    "revision": "ae81b8fcd3fcf25084991cff1c4ecaa1"
   },
   {
     "url": "build/docssite.js",
@@ -268,7 +268,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-bicycle.js",
-    "revision": "8d3a7ba7d71e86d839522be1fde0e140"
+    "revision": "be9e92ac42af7b159b01acc9ea84f3e8"
   },
   {
     "url": "build/ionicons/svg/ios-bike.js",
@@ -1179,6 +1179,10 @@ const fileManifest = [
     "revision": "d08f070381e1709db06f4974c42a2244"
   },
   {
+    "url": "build/ionicons/svg/ios-square-outline.js",
+    "revision": "c861ff69c146f08564f42baeecee58dc"
+  },
+  {
     "url": "build/ionicons/svg/ios-square.js",
     "revision": "e4006ece142ae240e944a7d55d7e74fd"
   },
@@ -1503,6 +1507,10 @@ const fileManifest = [
     "revision": "9962390bcc5af9a54d9f4d28da16a093"
   },
   {
+    "url": "build/ionicons/svg/logo-polymer.js",
+    "revision": "c71e4ba6a9a782b8394e5b5e88e70418"
+  },
+  {
     "url": "build/ionicons/svg/logo-python.js",
     "revision": "57e572d7e341f7e955bddec82dd909f5"
   },
@@ -1755,6 +1763,10 @@ const fileManifest = [
     "revision": "3dc3064a0b523849d96d339fa4744b00"
   },
   {
+    "url": "build/ionicons/svg/md-bed.js",
+    "revision": "e4e5f5bf846958c9d90cd8d59154fc5f"
+  },
+  {
     "url": "build/ionicons/svg/md-beer.js",
     "revision": "e1407d28fd4efab29c62937210ce4093"
   },
@@ -1816,7 +1828,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/md-bulb.js",
-    "revision": "400f3961bf21553115e8cf99e29d72dc"
+    "revision": "d67a8081360fef2d5a794d41361e0888"
   },
   {
     "url": "build/ionicons/svg/md-bus.js",
@@ -1859,6 +1871,10 @@ const fileManifest = [
     "revision": "c7f6724c7b5f0d747309c383fdd616cf"
   },
   {
+    "url": "build/ionicons/svg/md-cellular.js",
+    "revision": "8028a8882e6d4874064ef92d78194e9f"
+  },
+  {
     "url": "build/ionicons/svg/md-chatboxes.js",
     "revision": "67a807db9f9f4ba2b607a12438707769"
   },
@@ -1893,6 +1909,10 @@ const fileManifest = [
   {
     "url": "build/ionicons/svg/md-clock.js",
     "revision": "2c6d87d15c6faa286299de8aaf8a2f20"
+  },
+  {
+    "url": "build/ionicons/svg/md-close-circle-outline.js",
+    "revision": "3045c2d6517d345be8362c3621348517"
   },
   {
     "url": "build/ionicons/svg/md-close-circle.js",
@@ -2019,6 +2039,10 @@ const fileManifest = [
     "revision": "0165afe2ce19c337892be97fea4b8330"
   },
   {
+    "url": "build/ionicons/svg/md-dislike.js",
+    "revision": "b77e3f1629b0cc950fc31d99a7f41475"
+  },
+  {
     "url": "build/ionicons/svg/md-document.js",
     "revision": "f41498484377e51d3125ef5b5bef5059"
   },
@@ -2083,8 +2107,16 @@ const fileManifest = [
     "revision": "8563d44b3aa1c52bd01fb08a6ec952a3"
   },
   {
+    "url": "build/ionicons/svg/md-flash-off.js",
+    "revision": "4119e39d911e857e1c70e64404ea9736"
+  },
+  {
     "url": "build/ionicons/svg/md-flash.js",
     "revision": "34f4e1c3ee86f864862492dbb4f1480f"
+  },
+  {
+    "url": "build/ionicons/svg/md-flashlight.js",
+    "revision": "06ab324432e6c6c3851c18db71c429a4"
   },
   {
     "url": "build/ionicons/svg/md-flask.js",
@@ -2183,6 +2215,10 @@ const fileManifest = [
     "revision": "45494e16d0259a37aabc616c4c40b744"
   },
   {
+    "url": "build/ionicons/svg/md-help-circle-outline.js",
+    "revision": "e6dfe6746f0865110bde72c730c43a43"
+  },
+  {
     "url": "build/ionicons/svg/md-help-circle.js",
     "revision": "c0231cd315a29f637c921c5faf303f8e"
   },
@@ -2213,6 +2249,10 @@ const fileManifest = [
   {
     "url": "build/ionicons/svg/md-infinite.js",
     "revision": "2d4b69153f19f8b844ce4241e78a6c1c"
+  },
+  {
+    "url": "build/ionicons/svg/md-information-circle-outline.js",
+    "revision": "e0ee277e3d3aae4b8baf56fe2c7776e5"
   },
   {
     "url": "build/ionicons/svg/md-information-circle.js",
@@ -2277,6 +2317,10 @@ const fileManifest = [
   {
     "url": "build/ionicons/svg/md-mail-open.js",
     "revision": "7775bb42e4ad12107142df7091a98a0a"
+  },
+  {
+    "url": "build/ionicons/svg/md-mail-unread.js",
+    "revision": "aa99d80c2c93951e48aca6a4393f7022"
   },
   {
     "url": "build/ionicons/svg/md-mail.js",
@@ -2400,7 +2444,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/md-paw.js",
-    "revision": "8645ec18c20b0a43056003fca25ae832"
+    "revision": "3d79fcc78a688595b0dd383b6249896b"
   },
   {
     "url": "build/ionicons/svg/md-people.js",
@@ -2449,6 +2493,10 @@ const fileManifest = [
   {
     "url": "build/ionicons/svg/md-planet.js",
     "revision": "bc141af22f9490991887717311220f56"
+  },
+  {
+    "url": "build/ionicons/svg/md-play-circle.js",
+    "revision": "29711f120e2bc4d75f85a3f46eed9db3"
   },
   {
     "url": "build/ionicons/svg/md-play.js",
@@ -2519,6 +2567,10 @@ const fileManifest = [
     "revision": "90a7bdc8fff58886c9d3e7b4a253b65d"
   },
   {
+    "url": "build/ionicons/svg/md-remove-circle-outline.js",
+    "revision": "d02a13f1e2089276752340c4f00f0f87"
+  },
+  {
     "url": "build/ionicons/svg/md-remove-circle.js",
     "revision": "f371bae3b0835ed65f981be59e810b88"
   },
@@ -2561,6 +2613,10 @@ const fileManifest = [
   {
     "url": "build/ionicons/svg/md-ribbon.js",
     "revision": "1cc07bc602e23c21dd856185bee26bb4"
+  },
+  {
+    "url": "build/ionicons/svg/md-rocket.js",
+    "revision": "550948bb3679b32d83bf87cde149eff8"
   },
   {
     "url": "build/ionicons/svg/md-rose.js",
@@ -2620,7 +2676,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/md-square-outline.js",
-    "revision": "8d4b6ad54a00cea59c4fb9bfea10f1ab"
+    "revision": "78dea4a439c30c65ff2dd9cf858a4de4"
   },
   {
     "url": "build/ionicons/svg/md-square.js",
@@ -2707,6 +2763,10 @@ const fileManifest = [
     "revision": "3f1b4592ec1353dfa954cf6202c107ee"
   },
   {
+    "url": "build/ionicons/svg/md-today.js",
+    "revision": "5e8426d9f83658c51a2bdf8358a0f9c5"
+  },
+  {
     "url": "build/ionicons/svg/md-train.js",
     "revision": "0c28ea142fbd93eff6463a923a0d7433"
   },
@@ -2729,6 +2789,10 @@ const fileManifest = [
   {
     "url": "build/ionicons/svg/md-trophy.js",
     "revision": "f204f76e9794a009d04281e51afcc263"
+  },
+  {
+    "url": "build/ionicons/svg/md-tv.js",
+    "revision": "f9760e928671c522df5b836bd82fcf9e"
   },
   {
     "url": "build/ionicons/svg/md-umbrella.js",

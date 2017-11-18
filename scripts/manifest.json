@@ -1087,6 +1087,10 @@
       "name": "ios-square"
     },
     {
+      "code": "0xf15c",
+      "name": "ios-square-outline"
+    },
+    {
       "code": "0xf4b3",
       "name": "ios-star"
     },
@@ -1407,6 +1411,10 @@
       "name": "logo-playstation"
     },
     {
+      "code": "0xf15e",
+      "name": "logo-polymer"
+    },
+    {
       "code": "0xf246",
       "name": "logo-python"
     },
@@ -1659,6 +1667,10 @@
       "name": "md-beaker"
     },
     {
+      "code": "0xf160",
+      "name": "md-bed"
+    },
+    {
       "code": "0xf298",
       "name": "md-beer"
     },
@@ -1763,6 +1775,10 @@
       "name": "md-cash"
     },
     {
+      "code": "0xf164",
+      "name": "md-cellular"
+    },
+    {
       "code": "0xf2b6",
       "name": "md-chatboxes"
     },
@@ -1805,6 +1821,10 @@
     {
       "code": "0xf2bf",
       "name": "md-close-circle"
+    },
+    {
+      "code": "0xf166",
+      "name": "md-close-circle-outline"
     },
     {
       "code": "0xf2c9",
@@ -1923,6 +1943,10 @@
       "name": "md-disc"
     },
     {
+      "code": "0xf167",
+      "name": "md-dislike"
+    },
+    {
       "code": "0xf2e1",
       "name": "md-document"
     },
@@ -1989,6 +2013,14 @@
     {
       "code": "0xf2f1",
       "name": "md-flash"
+    },
+    {
+      "code": "0xf169",
+      "name": "md-flash-off"
+    },
+    {
+      "code": "0xf16b",
+      "name": "md-flashlight"
     },
     {
       "code": "0xf2f2",
@@ -2095,6 +2127,10 @@
       "name": "md-help-circle"
     },
     {
+      "code": "0xf16d",
+      "name": "md-help-circle-outline"
+    },
+    {
       "code": "0xf30c",
       "name": "md-home"
     },
@@ -2125,6 +2161,10 @@
     {
       "code": "0xf311",
       "name": "md-information-circle"
+    },
+    {
+      "code": "0xf16f",
+      "name": "md-information-circle-outline"
     },
     {
       "code": "0xf315",
@@ -2185,6 +2225,10 @@
     {
       "code": "0xf321",
       "name": "md-mail-open"
+    },
+    {
+      "code": "0xf172",
+      "name": "md-mail-unread"
     },
     {
       "code": "0xf323",
@@ -2359,6 +2403,10 @@
       "name": "md-play"
     },
     {
+      "code": "0xf174",
+      "name": "md-play-circle"
+    },
+    {
       "code": "0xf358",
       "name": "md-podium"
     },
@@ -2431,6 +2479,10 @@
       "name": "md-remove-circle"
     },
     {
+      "code": "0xf176",
+      "name": "md-remove-circle-outline"
+    },
+    {
       "code": "0xf369",
       "name": "md-reorder"
     },
@@ -2465,6 +2517,10 @@
     {
       "code": "0xf371",
       "name": "md-ribbon"
+    },
+    {
+      "code": "0xf179",
+      "name": "md-rocket"
     },
     {
       "code": "0xf372",
@@ -2611,6 +2667,10 @@
       "name": "md-timer"
     },
     {
+      "code": "0xf17d",
+      "name": "md-today"
+    },
+    {
       "code": "0xf396",
       "name": "md-train"
     },
@@ -2633,6 +2693,10 @@
     {
       "code": "0xf39b",
       "name": "md-trophy"
+    },
+    {
+      "code": "0xf17f",
+      "name": "md-tv"
     },
     {
       "code": "0xf39c",
