@@ -2467,12 +2467,8 @@
     ],
     "icons": [
       {
-        "code": "0xf439",
-        "name": "ios-game-controller-a"
-      },
-      {
-        "code": "0xf2f8",
-        "name": "md-game-controller-a"
+        "code": "0xf13b",
+        "name": "logo-game-controller-a"
       }
     ]
   },
@@ -2485,12 +2481,8 @@
     ],
     "icons": [
       {
-        "code": "0xf43b",
-        "name": "ios-game-controller-b"
-      },
-      {
-        "code": "0xf2f9",
-        "name": "md-game-controller-b"
+        "code": "0xf181",
+        "name": "logo-game-controller-b"
       }
     ]
   },

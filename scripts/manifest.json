@@ -543,14 +543,6 @@
       "name": "ios-funnel"
     },
     {
-      "code": "0xf439",
-      "name": "ios-game-controller-a"
-    },
-    {
-      "code": "0xf43b",
-      "name": "ios-game-controller-b"
-    },
-    {
       "code": "0xf183",
       "name": "ios-git-branch"
     },
@@ -1319,6 +1311,14 @@
       "name": "logo-freebsd-devil"
     },
     {
+      "code": "0xf13b",
+      "name": "logo-game-controller-a"
+    },
+    {
+      "code": "0xf181",
+      "name": "logo-game-controller-b"
+    },
+    {
       "code": "0xf239",
       "name": "logo-github"
     },
@@ -2021,14 +2021,6 @@
     {
       "code": "0xf2f7",
       "name": "md-funnel"
-    },
-    {
-      "code": "0xf2f8",
-      "name": "md-game-controller-a"
-    },
-    {
-      "code": "0xf2f9",
-      "name": "md-game-controller-b"
     },
     {
       "code": "0xf2fa",

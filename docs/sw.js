@@ -24,7 +24,7 @@ const fileManifest = [
   },
   {
     "url": "build/data.json",
-    "revision": "d03ad4afd30a5c83dd48a6032af4274e"
+    "revision": "a3cde9d39bb5b8e9df70c566afd99d11"
   },
   {
     "url": "build/docssite.js",
@@ -637,14 +637,6 @@ const fileManifest = [
   {
     "url": "build/ionicons/svg/ios-funnel.js",
     "revision": "c2bbbb6086bbeda9909029434ed7dc32"
-  },
-  {
-    "url": "build/ionicons/svg/ios-game-controller-a.js",
-    "revision": "c8247b321efa0f4fac85039dd8cf3b7c"
-  },
-  {
-    "url": "build/ionicons/svg/ios-game-controller-b.js",
-    "revision": "43b5c7ee736ad178c1e75c1f70c352dc"
   },
   {
     "url": "build/ionicons/svg/ios-git-branch.js",
@@ -1415,6 +1407,14 @@ const fileManifest = [
     "revision": "198d0fdae7fe06f70d76d2346a550c23"
   },
   {
+    "url": "build/ionicons/svg/logo-game-controller-a.js",
+    "revision": "723c28b375df7daa0ece5a164c337ab7"
+  },
+  {
+    "url": "build/ionicons/svg/logo-game-controller-b.js",
+    "revision": "0839531c96cb315866973e1510eb1917"
+  },
+  {
     "url": "build/ionicons/svg/logo-github.js",
     "revision": "b730f772076bbff3c1480d6cb06532e1"
   },
@@ -2117,14 +2117,6 @@ const fileManifest = [
   {
     "url": "build/ionicons/svg/md-funnel.js",
     "revision": "7b59e2b296440f8da7b1ae7e493273e3"
-  },
-  {
-    "url": "build/ionicons/svg/md-game-controller-a.js",
-    "revision": "64ceb047097a74e89f05084cfabbc111"
-  },
-  {
-    "url": "build/ionicons/svg/md-game-controller-b.js",
-    "revision": "0b751361eadf91682f99dab7f7809901"
   },
   {
     "url": "build/ionicons/svg/md-git-branch.js",
@@ -2832,7 +2824,7 @@ const fileManifest = [
   },
   {
     "url": "cheatsheet.html",
-    "revision": "8ca64c4019f47bf4bde1c73ab1e5e84d"
+    "revision": "a02d9e4111e28730207a35d0550196c1"
   },
   {
     "url": "index.html",
