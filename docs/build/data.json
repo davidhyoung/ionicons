@@ -5685,19 +5685,35 @@
       }
     ]
   },
-  "volume-down": {
+  "volume-high": {
     "tags": [
-      "down",
-      "volume"
+      "volume",
+      "high"
     ],
     "icons": [
       {
-        "code": "0xf262",
-        "name": "ios-volume-down"
+        "code": "0xf11c",
+        "name": "ios-volume-high"
       },
       {
-        "code": "0xf3a0",
-        "name": "md-volume-down"
+        "code": "0xf123",
+        "name": "md-volume-high"
+      }
+    ]
+  },
+  "volume-low": {
+    "tags": [
+      "volume",
+      "low"
+    ],
+    "icons": [
+      {
+        "code": "0xf11e",
+        "name": "ios-volume-low"
+      },
+      {
+        "code": "0xf131",
+        "name": "md-volume-low"
       }
     ]
   },
@@ -5731,22 +5747,6 @@
       {
         "code": "0xf3a2",
         "name": "md-volume-off"
-      }
-    ]
-  },
-  "volume-up": {
-    "tags": [
-      "up",
-      "volume"
-    ],
-    "icons": [
-      {
-        "code": "0xf265",
-        "name": "ios-volume-up"
-      },
-      {
-        "code": "0xf3a3",
-        "name": "md-volume-up"
       }
     ]
   },

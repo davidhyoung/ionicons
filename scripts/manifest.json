@@ -1219,20 +1219,12 @@
       "name": "ios-volume-low"
     },
     {
-      "code": "0xf123",
-      "name": "ios-volume-med"
-    },
-    {
       "code": "0xf263",
       "name": "ios-volume-mute"
     },
     {
       "code": "0xf264",
       "name": "ios-volume-off"
-    },
-    {
-      "code": "0xf265",
-      "name": "ios-volume-up"
     },
     {
       "code": "0xf266",
@@ -2699,8 +2691,12 @@
       "name": "md-videocam"
     },
     {
-      "code": "0xf3a0",
-      "name": "md-volume-down"
+      "code": "0xf123",
+      "name": "md-volume-high"
+    },
+    {
+      "code": "0xf131",
+      "name": "md-volume-low"
     },
     {
       "code": "0xf3a1",
@@ -2709,10 +2705,6 @@
     {
       "code": "0xf3a2",
       "name": "md-volume-off"
-    },
-    {
-      "code": "0xf3a3",
-      "name": "md-volume-up"
     },
     {
       "code": "0xf3a4",

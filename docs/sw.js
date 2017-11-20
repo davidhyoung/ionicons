@@ -24,7 +24,7 @@ const fileManifest = [
   },
   {
     "url": "build/data.json",
-    "revision": "ae81b8fcd3fcf25084991cff1c4ecaa1"
+    "revision": "d03ad4afd30a5c83dd48a6032af4274e"
   },
   {
     "url": "build/docssite.js",
@@ -1315,20 +1315,12 @@ const fileManifest = [
     "revision": "ad160cbe842e7594789b2c815fc24879"
   },
   {
-    "url": "build/ionicons/svg/ios-volume-med.js",
-    "revision": "8752652dd1520e79de03d898a9ff4e3d"
-  },
-  {
     "url": "build/ionicons/svg/ios-volume-mute.js",
     "revision": "869ce83fb7fdaba308b6ab89b4e069e1"
   },
   {
     "url": "build/ionicons/svg/ios-volume-off.js",
     "revision": "104c0943d7203686817cd3e1c383cfb4"
-  },
-  {
-    "url": "build/ionicons/svg/ios-volume-up.js",
-    "revision": "0ffbae8255fcd255878372da0e89d829"
   },
   {
     "url": "build/ionicons/svg/ios-walk.js",
@@ -2795,8 +2787,12 @@ const fileManifest = [
     "revision": "10453be79806905c20e23e2e8df79ce7"
   },
   {
-    "url": "build/ionicons/svg/md-volume-down.js",
-    "revision": "eb06a11139be2ac0149adc8fff36a222"
+    "url": "build/ionicons/svg/md-volume-high.js",
+    "revision": "7b951cbd9a38b35bdf4e0a4bf1987616"
+  },
+  {
+    "url": "build/ionicons/svg/md-volume-low.js",
+    "revision": "f9f6ded50221946bb2c4a0cd7efdccc6"
   },
   {
     "url": "build/ionicons/svg/md-volume-mute.js",
@@ -2805,10 +2801,6 @@ const fileManifest = [
   {
     "url": "build/ionicons/svg/md-volume-off.js",
     "revision": "4f82a0ecba37073e7038e0604701e74e"
-  },
-  {
-    "url": "build/ionicons/svg/md-volume-up.js",
-    "revision": "f6a3fb86206e0ff0fa9a92e11e2dde58"
   },
   {
     "url": "build/ionicons/svg/md-walk.js",
@@ -2844,7 +2836,7 @@ const fileManifest = [
   },
   {
     "url": "cheatsheet.html",
-    "revision": "7c12d74af9b7ca620c401936457fce2e"
+    "revision": "7b0ac1ce23c5b586cad4149d5cbbf430"
   },
   {
     "url": "index.html",
