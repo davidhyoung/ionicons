@@ -920,7 +920,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-paper-plane.js",
-    "revision": "57af82ab88c3a25813775a57f8f3d8ab"
+    "revision": "d6c40d978c5df2059476cb2b452335aa"
   },
   {
     "url": "build/ionicons/svg/ios-paper.js",
