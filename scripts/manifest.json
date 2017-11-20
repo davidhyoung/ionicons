@@ -1207,10 +1207,6 @@
       "name": "ios-videocam"
     },
     {
-      "code": "0xf262",
-      "name": "ios-volume-down"
-    },
-    {
       "code": "0xf11c",
       "name": "ios-volume-high"
     },

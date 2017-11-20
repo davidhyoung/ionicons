@@ -1303,10 +1303,6 @@ const fileManifest = [
     "revision": "755ff86a3b948d20d6b237dc3dd82e62"
   },
   {
-    "url": "build/ionicons/svg/ios-volume-down.js",
-    "revision": "498081f3787f5d0cbf9576453dcfea3e"
-  },
-  {
     "url": "build/ionicons/svg/ios-volume-high.js",
     "revision": "2cdbfe760c998e149643b2196d82a8ad"
   },
@@ -2836,7 +2832,7 @@ const fileManifest = [
   },
   {
     "url": "cheatsheet.html",
-    "revision": "7b0ac1ce23c5b586cad4149d5cbbf430"
+    "revision": "8ca64c4019f47bf4bde1c73ab1e5e84d"
   },
   {
     "url": "index.html",
