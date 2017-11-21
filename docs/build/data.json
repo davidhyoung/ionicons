@@ -3072,6 +3072,21 @@
       }
     ]
   },
+  "journal": {
+    "tags": [
+      "journal"
+    ],
+    "icons": [
+      {
+        "code": "0xf189",
+        "name": "ios-journal"
+      },
+      {
+        "code": "0xf18d",
+        "name": "md-journal"
+      }
+    ]
+  },
   "key": {
     "tags": [
       "access",
@@ -5754,6 +5769,21 @@
       {
         "code": "0xf3a4",
         "name": "md-walk"
+      }
+    ]
+  },
+  "wallet": {
+    "tags": [
+      "wallet"
+    ],
+    "icons": [
+      {
+        "code": "0xf18b",
+        "name": "ios-wallet"
+      },
+      {
+        "code": "0xf18f",
+        "name": "md-wallet"
       }
     ]
   },

@@ -24,7 +24,7 @@ const fileManifest = [
   },
   {
     "url": "build/data.json",
-    "revision": "a3cde9d39bb5b8e9df70c566afd99d11"
+    "revision": "29e604ae7a1b9432c11dc7e20efc4903"
   },
   {
     "url": "build/docssite.js",
@@ -751,6 +751,10 @@ const fileManifest = [
     "revision": "8166a01e43f38a352e93b382c1e0d945"
   },
   {
+    "url": "build/ionicons/svg/ios-journal.js",
+    "revision": "37c5520889d0b0b9ae0dde5675e17fe0"
+  },
+  {
     "url": "build/ionicons/svg/ios-key.js",
     "revision": "6a16d068d4dba80e1211c50bcc770767"
   },
@@ -1313,6 +1317,10 @@ const fileManifest = [
   {
     "url": "build/ionicons/svg/ios-walk.js",
     "revision": "76d4d0bba4d386669ce64110734c4306"
+  },
+  {
+    "url": "build/ionicons/svg/ios-wallet.js",
+    "revision": "79fa225896f20db92a57cd0d9e9d6675"
   },
   {
     "url": "build/ionicons/svg/ios-warning.js",
@@ -2231,6 +2239,10 @@ const fileManifest = [
     "revision": "e80597e0275238ccfd98cc40c3da3656"
   },
   {
+    "url": "build/ionicons/svg/md-journal.js",
+    "revision": "765ee5f3a50493badbcfc18dcd7472ad"
+  },
+  {
     "url": "build/ionicons/svg/md-key.js",
     "revision": "6f39be208ba4be5f8cf487ee6b7464ab"
   },
@@ -2732,7 +2744,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/md-train.js",
-    "revision": "0c28ea142fbd93eff6463a923a0d7433"
+    "revision": "4bfbc7ebfcf233f2c289daf423618aba"
   },
   {
     "url": "build/ionicons/svg/md-transgender.js",
@@ -2795,6 +2807,10 @@ const fileManifest = [
     "revision": "8d82b0bd3974cf4a8e45456711fb3958"
   },
   {
+    "url": "build/ionicons/svg/md-wallet.js",
+    "revision": "fc922aa3612c3cad263aab2fc0f84793"
+  },
+  {
     "url": "build/ionicons/svg/md-warning.js",
     "revision": "9999b8ca1b72b4d66b4426e55a5b7f67"
   },
@@ -2824,7 +2840,7 @@ const fileManifest = [
   },
   {
     "url": "cheatsheet.html",
-    "revision": "a02d9e4111e28730207a35d0550196c1"
+    "revision": "7a23589f3a54c7e90119bacf59dfb446"
   },
   {
     "url": "index.html",

@@ -655,6 +655,10 @@
       "name": "ios-jet"
     },
     {
+      "code": "0xf189",
+      "name": "ios-journal"
+    },
+    {
       "code": "0xf1a7",
       "name": "ios-key"
     },
@@ -1217,6 +1221,10 @@
     {
       "code": "0xf266",
       "name": "ios-walk"
+    },
+    {
+      "code": "0xf18b",
+      "name": "ios-wallet"
     },
     {
       "code": "0xf268",
@@ -2135,6 +2143,10 @@
       "name": "md-jet"
     },
     {
+      "code": "0xf18d",
+      "name": "md-journal"
+    },
+    {
       "code": "0xf316",
       "name": "md-key"
     },
@@ -2697,6 +2709,10 @@
     {
       "code": "0xf3a4",
       "name": "md-walk"
+    },
+    {
+      "code": "0xf18f",
+      "name": "md-wallet"
     },
     {
       "code": "0xf3a5",
