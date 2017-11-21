@@ -4874,6 +4874,21 @@
       }
     ]
   },
+  "save": {
+    "tags": [
+      "save"
+    ],
+    "icons": [
+      {
+        "code": "0xf1a6",
+        "name": "ios-save"
+      },
+      {
+        "code": "0xf1a9",
+        "name": "md-save"
+      }
+    ]
+  },
   "school": {
     "tags": [
       "school"

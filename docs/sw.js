@@ -24,7 +24,7 @@ const fileManifest = [
   },
   {
     "url": "build/data.json",
-    "revision": "6013a64f2de79b55747bbf2b1cc96488"
+    "revision": "af1fc0212c3d02c6ed0519fa4c51b677"
   },
   {
     "url": "build/docssite.js",
@@ -1024,7 +1024,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-print.js",
-    "revision": "678728ca144c6c88ae0c24c36dc970cf"
+    "revision": "b6bbf75da66fc9c6cbb4737128d53749"
   },
   {
     "url": "build/ionicons/svg/ios-pulse.js",
@@ -1129,6 +1129,10 @@ const fileManifest = [
   {
     "url": "build/ionicons/svg/ios-sad.js",
     "revision": "8d574a6911aa1176ba5a45ea1a8fc29a"
+  },
+  {
+    "url": "build/ionicons/svg/ios-save.js",
+    "revision": "da4d6b21193a337f20646f18e89fd754"
   },
   {
     "url": "build/ionicons/svg/ios-school.js",
@@ -2643,6 +2647,10 @@ const fileManifest = [
     "revision": "659f85a7d24eb5c581fb0485fe927304"
   },
   {
+    "url": "build/ionicons/svg/md-save.js",
+    "revision": "4a7959f0bb19bdb82ef1c13fe5ce529c"
+  },
+  {
     "url": "build/ionicons/svg/md-school.js",
     "revision": "1e68e312b761c5be3e64b469c0becff6"
   },
@@ -2880,7 +2888,7 @@ const fileManifest = [
   },
   {
     "url": "cheatsheet.html",
-    "revision": "2227fbc9b7a34f7463307a3f050a4d59"
+    "revision": "312eb44e6c9a277df5a3498eecb383ff"
   },
   {
     "url": "index.html",

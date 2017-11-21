@@ -1035,6 +1035,10 @@
       "name": "ios-sad"
     },
     {
+      "code": "0xf1a6",
+      "name": "ios-save"
+    },
+    {
       "code": "0xf209",
       "name": "ios-school"
     },
@@ -2545,6 +2549,10 @@
     {
       "code": "0xf373",
       "name": "md-sad"
+    },
+    {
+      "code": "0xf1a9",
+      "name": "md-save"
     },
     {
       "code": "0xf374",
