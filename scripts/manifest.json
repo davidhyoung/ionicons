@@ -439,10 +439,6 @@
       "name": "ios-disc"
     },
     {
-      "code": "0xf13f",
-      "name": "ios-dislike"
-    },
-    {
       "code": "0xf170",
       "name": "ios-document"
     },
@@ -601,6 +597,10 @@
     {
       "code": "0xf443",
       "name": "ios-heart"
+    },
+    {
+      "code": "0xf13f",
+      "name": "ios-heart-dislike"
     },
     {
       "code": "0xf19b",
@@ -1947,10 +1947,6 @@
       "name": "md-disc"
     },
     {
-      "code": "0xf167",
-      "name": "md-dislike"
-    },
-    {
       "code": "0xf2e1",
       "name": "md-document"
     },
@@ -2109,6 +2105,10 @@
     {
       "code": "0xf308",
       "name": "md-heart"
+    },
+    {
+      "code": "0xf167",
+      "name": "md-heart-dislike"
     },
     {
       "code": "0xf1a1",

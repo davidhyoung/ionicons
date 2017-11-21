@@ -1952,21 +1952,6 @@
       }
     ]
   },
-  "dislike": {
-    "tags": [
-      "dislike"
-    ],
-    "icons": [
-      {
-        "code": "0xf13f",
-        "name": "ios-dislike"
-      },
-      {
-        "code": "0xf167",
-        "name": "md-dislike"
-      }
-    ]
-  },
   "document": {
     "tags": [
       "document",
@@ -2798,6 +2783,22 @@
       {
         "code": "0xf308",
         "name": "md-heart"
+      }
+    ]
+  },
+  "heart-dislike": {
+    "tags": [
+      "heart",
+      "dislike"
+    ],
+    "icons": [
+      {
+        "code": "0xf13f",
+        "name": "ios-heart-dislike"
+      },
+      {
+        "code": "0xf167",
+        "name": "md-heart-dislike"
       }
     ]
   },

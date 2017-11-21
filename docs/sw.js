@@ -24,7 +24,7 @@ const fileManifest = [
   },
   {
     "url": "build/data.json",
-    "revision": "d8108bf129749c77857377265367523e"
+    "revision": "a45526c82428d3bb39bee1b0d507f0d4"
   },
   {
     "url": "build/docssite.js",
@@ -535,10 +535,6 @@ const fileManifest = [
     "revision": "1ed1a5029ff90add6524daa6e4954b6d"
   },
   {
-    "url": "build/ionicons/svg/ios-dislike.js",
-    "revision": "07dabb66485adceeb63a92d84b35fed1"
-  },
-  {
     "url": "build/ionicons/svg/ios-document.js",
     "revision": "337be642193fa2c2d715a7a67ea2d9c1"
   },
@@ -693,6 +689,10 @@ const fileManifest = [
   {
     "url": "build/ionicons/svg/ios-headset.js",
     "revision": "98df10f77f0f5da32fe6c5308da88607"
+  },
+  {
+    "url": "build/ionicons/svg/ios-heart-dislike.js",
+    "revision": "858bbd411c994a34b25ef58f1ebb68f1"
   },
   {
     "url": "build/ionicons/svg/ios-heart-empty.js",
@@ -2043,10 +2043,6 @@ const fileManifest = [
     "revision": "0165afe2ce19c337892be97fea4b8330"
   },
   {
-    "url": "build/ionicons/svg/md-dislike.js",
-    "revision": "b77e3f1629b0cc950fc31d99a7f41475"
-  },
-  {
     "url": "build/ionicons/svg/md-document.js",
     "revision": "f41498484377e51d3125ef5b5bef5059"
   },
@@ -2201,6 +2197,10 @@ const fileManifest = [
   {
     "url": "build/ionicons/svg/md-headset.js",
     "revision": "1dc4b337fe16568c9acdfded0da42bc0"
+  },
+  {
+    "url": "build/ionicons/svg/md-heart-dislike.js",
+    "revision": "826853bddd8558cd934cc62e05b51615"
   },
   {
     "url": "build/ionicons/svg/md-heart-empty.js",
@@ -2872,7 +2872,7 @@ const fileManifest = [
   },
   {
     "url": "cheatsheet.html",
-    "revision": "b3d32d1593d60edbe3175db69be5488e"
+    "revision": "ba4afeb6dce11e8ee3acc5765d574992"
   },
   {
     "url": "index.html",
