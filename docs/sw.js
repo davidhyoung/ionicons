@@ -24,7 +24,7 @@ const fileManifest = [
   },
   {
     "url": "build/data.json",
-    "revision": "722b61d4e1cae3c6b03ed6232011fd04"
+    "revision": "d8108bf129749c77857377265367523e"
   },
   {
     "url": "build/docssite.js",
@@ -693,6 +693,14 @@ const fileManifest = [
   {
     "url": "build/ionicons/svg/ios-headset.js",
     "revision": "98df10f77f0f5da32fe6c5308da88607"
+  },
+  {
+    "url": "build/ionicons/svg/ios-heart-empty.js",
+    "revision": "fc56c6d16c549e1c9cdf3fbecf5ae81f"
+  },
+  {
+    "url": "build/ionicons/svg/ios-heart-half.js",
+    "revision": "326354f73c448ff858b099f7c01ae7b5"
   },
   {
     "url": "build/ionicons/svg/ios-heart.js",
@@ -2195,6 +2203,14 @@ const fileManifest = [
     "revision": "1dc4b337fe16568c9acdfded0da42bc0"
   },
   {
+    "url": "build/ionicons/svg/md-heart-empty.js",
+    "revision": "759f1c3c23bde7b2708f195e5e6ccc7e"
+  },
+  {
+    "url": "build/ionicons/svg/md-heart-half.js",
+    "revision": "ea74f3e9da47110776f598d67190c5f3"
+  },
+  {
     "url": "build/ionicons/svg/md-heart.js",
     "revision": "e3e35367b1a8459fed498605ffb973ab"
   },
@@ -2856,7 +2872,7 @@ const fileManifest = [
   },
   {
     "url": "cheatsheet.html",
-    "revision": "cf2c6197e899306b0e2893bdfa5e4159"
+    "revision": "b3d32d1593d60edbe3175db69be5488e"
   },
   {
     "url": "index.html",

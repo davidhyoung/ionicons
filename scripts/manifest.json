@@ -603,6 +603,14 @@
       "name": "ios-heart"
     },
     {
+      "code": "0xf19b",
+      "name": "ios-heart-empty"
+    },
+    {
+      "code": "0xf19d",
+      "name": "ios-heart-half"
+    },
+    {
       "code": "0xf446",
       "name": "ios-help"
     },
@@ -2101,6 +2109,14 @@
     {
       "code": "0xf308",
       "name": "md-heart"
+    },
+    {
+      "code": "0xf1a1",
+      "name": "md-heart-empty"
+    },
+    {
+      "code": "0xf1a2",
+      "name": "md-heart-half"
     },
     {
       "code": "0xf30b",

@@ -2801,6 +2801,38 @@
       }
     ]
   },
+  "heart-empty": {
+    "tags": [
+      "heart",
+      "empty"
+    ],
+    "icons": [
+      {
+        "code": "0xf19b",
+        "name": "ios-heart-empty"
+      },
+      {
+        "code": "0xf1a1",
+        "name": "md-heart-empty"
+      }
+    ]
+  },
+  "heart-half": {
+    "tags": [
+      "heart",
+      "half"
+    ],
+    "icons": [
+      {
+        "code": "0xf19d",
+        "name": "ios-heart-half"
+      },
+      {
+        "code": "0xf1a2",
+        "name": "md-heart-half"
+      }
+    ]
+  },
   "help": {
     "tags": [
       "?",
