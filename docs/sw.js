@@ -24,7 +24,7 @@ const fileManifest = [
   },
   {
     "url": "build/data.json",
-    "revision": "29e604ae7a1b9432c11dc7e20efc4903"
+    "revision": "722b61d4e1cae3c6b03ed6232011fd04"
   },
   {
     "url": "build/docssite.js",
@@ -637,6 +637,10 @@ const fileManifest = [
   {
     "url": "build/ionicons/svg/ios-funnel.js",
     "revision": "c2bbbb6086bbeda9909029434ed7dc32"
+  },
+  {
+    "url": "build/ionicons/svg/ios-gift.js",
+    "revision": "0f7c419eff49b93bc93f799b47fd6228"
   },
   {
     "url": "build/ionicons/svg/ios-git-branch.js",
@@ -1359,6 +1363,10 @@ const fileManifest = [
     "revision": "5b17e3bebf1795291a342cb7312e88a8"
   },
   {
+    "url": "build/ionicons/svg/logo-bitbucket.js",
+    "revision": "e62d6092e5f815ec4d16fd02689310ef"
+  },
+  {
     "url": "build/ionicons/svg/logo-bitcoin.js",
     "revision": "dd5b8d89a7428b4f7610fce466897cfb"
   },
@@ -1477,6 +1485,10 @@ const fileManifest = [
   {
     "url": "build/ionicons/svg/logo-nodejs.js",
     "revision": "f1c3e9b5e68df25f1d558d6348ed8018"
+  },
+  {
+    "url": "build/ionicons/svg/logo-npm.js",
+    "revision": "c6269a8144fae5f7cf469f21d7ba2da7"
   },
   {
     "url": "build/ionicons/svg/logo-octocat.js",
@@ -2125,6 +2137,10 @@ const fileManifest = [
   {
     "url": "build/ionicons/svg/md-funnel.js",
     "revision": "7b59e2b296440f8da7b1ae7e493273e3"
+  },
+  {
+    "url": "build/ionicons/svg/md-gift.js",
+    "revision": "63463cc75bdfc4b7c7f82027250071cc"
   },
   {
     "url": "build/ionicons/svg/md-git-branch.js",
@@ -2840,7 +2856,7 @@ const fileManifest = [
   },
   {
     "url": "cheatsheet.html",
-    "revision": "7a23589f3a54c7e90119bacf59dfb446"
+    "revision": "cf2c6197e899306b0e2893bdfa5e4159"
   },
   {
     "url": "index.html",

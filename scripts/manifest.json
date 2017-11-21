@@ -543,6 +543,10 @@
       "name": "ios-funnel"
     },
     {
+      "code": "0xf191",
+      "name": "ios-gift"
+    },
+    {
       "code": "0xf183",
       "name": "ios-git-branch"
     },
@@ -1263,6 +1267,10 @@
       "name": "logo-apple"
     },
     {
+      "code": "0xf193",
+      "name": "logo-bitbucket"
+    },
+    {
       "code": "0xf22b",
       "name": "logo-bitcoin"
     },
@@ -1381,6 +1389,10 @@
     {
       "code": "0xf242",
       "name": "logo-nodejs"
+    },
+    {
+      "code": "0xf195",
+      "name": "logo-npm"
     },
     {
       "code": "0xf243",
@@ -2029,6 +2041,10 @@
     {
       "code": "0xf2f7",
       "name": "md-funnel"
+    },
+    {
+      "code": "0xf199",
+      "name": "md-gift"
     },
     {
       "code": "0xf2fa",

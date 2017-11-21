@@ -752,6 +752,17 @@
       }
     ]
   },
+  "bitbucket": {
+    "tags": [
+      "bitbucket"
+    ],
+    "icons": [
+      {
+        "code": "0xf193",
+        "name": "logo-bitbucket"
+      }
+    ]
+  },
   "bitcoin": {
     "tags": [
       "bitcoin",
@@ -2486,6 +2497,21 @@
       }
     ]
   },
+  "gift": {
+    "tags": [
+      "gift"
+    ],
+    "icons": [
+      {
+        "code": "0xf191",
+        "name": "ios-gift"
+      },
+      {
+        "code": "0xf199",
+        "name": "md-gift"
+      }
+    ]
+  },
   "git-branch": {
     "tags": [
       "branch",
@@ -3750,6 +3776,17 @@
       {
         "code": "0xf337",
         "name": "md-notifications-outline"
+      }
+    ]
+  },
+  "npm": {
+    "tags": [
+      "npm"
+    ],
+    "icons": [
+      {
+        "code": "0xf195",
+        "name": "logo-npm"
       }
     ]
   },
