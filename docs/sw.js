@@ -24,7 +24,7 @@ const fileManifest = [
   },
   {
     "url": "build/data.json",
-    "revision": "a45526c82428d3bb39bee1b0d507f0d4"
+    "revision": "6013a64f2de79b55747bbf2b1cc96488"
   },
   {
     "url": "build/docssite.js",
@@ -329,6 +329,10 @@ const fileManifest = [
   {
     "url": "build/ionicons/svg/ios-bus.js",
     "revision": "bb2a7ee55ed9ad6696d01216d1b92753"
+  },
+  {
+    "url": "build/ionicons/svg/ios-business.js",
+    "revision": "a2f03dface1b550538f025aaa4e6d2d7"
   },
   {
     "url": "build/ionicons/svg/ios-cafe.js",
@@ -1839,6 +1843,10 @@ const fileManifest = [
     "revision": "bbf0c5152202f0567dc14e4157247afe"
   },
   {
+    "url": "build/ionicons/svg/md-business.js",
+    "revision": "e3cb3b3175823f5c2128c1cfd239f748"
+  },
+  {
     "url": "build/ionicons/svg/md-cafe.js",
     "revision": "58b45df591dac43f45dc7f2f9246ee52"
   },
@@ -2236,7 +2244,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/md-hourglass.js",
-    "revision": "dcdbbd1678b8cf1af46f7b526eb150a3"
+    "revision": "d43bee77ab483c8c7777f8dbcd87b3f4"
   },
   {
     "url": "build/ionicons/svg/md-ice-cream.js",
@@ -2872,7 +2880,7 @@ const fileManifest = [
   },
   {
     "url": "cheatsheet.html",
-    "revision": "ba4afeb6dce11e8ee3acc5765d574992"
+    "revision": "2227fbc9b7a34f7463307a3f050a4d59"
   },
   {
     "url": "index.html",

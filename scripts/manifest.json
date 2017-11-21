@@ -235,6 +235,10 @@
       "name": "ios-bus"
     },
     {
+      "code": "0xf1a3",
+      "name": "ios-business"
+    },
+    {
       "code": "0xf13c",
       "name": "ios-cafe"
     },
@@ -1741,6 +1745,10 @@
     {
       "code": "0xf2a8",
       "name": "md-bus"
+    },
+    {
+      "code": "0xf1a4",
+      "name": "md-business"
     },
     {
       "code": "0xf2a9",
