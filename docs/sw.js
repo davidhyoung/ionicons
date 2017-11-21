@@ -1144,7 +1144,7 @@ const fileManifest = [
   },
   {
     "url": "build/ionicons/svg/ios-share-alt.js",
-    "revision": "97b6508db90eb3593049817c6f73a6f7"
+    "revision": "a475ae18d9f12b501776aabc39d7c393"
   },
   {
     "url": "build/ionicons/svg/ios-share.js",
