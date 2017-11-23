@@ -3,6 +3,11 @@
     npm run build
 
 
+# Data
+
+    Update the src/data.json file with each icon and search tags.
+
+
 # Cheatsheet
 
     docs/cheatsheet.html
