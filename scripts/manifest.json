@@ -2019,6 +2019,10 @@
       "name": "md-finger-print"
     },
     {
+      "code": "0xf1ac",
+      "name": "md-fitness"
+    },
+    {
       "code": "0xf2ef",
       "name": "md-flag"
     },
