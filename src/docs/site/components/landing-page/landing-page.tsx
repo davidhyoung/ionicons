@@ -3,24 +3,26 @@ import { Component } from '@stencil/core';
 
 @Component({
   tag: 'landing-page',
-  styleUrl: 'landing-page.scss'
+  styleUrl: 'landing-page.scss',
+  scoped: true
 })
 export class LandingPage {
 
   render() {
     return <main>
 
-      <header>
+      <header-bar></header-bar>
+
+      <div>
         <h1>
-          The premium icon pack for <a href="http://ionicframework.com/">Ionic Framework</a>.
+          Beautifully crafted open source icons.
         </h1>
 
-        <h2>
-          100% free and open source. MIT Licensed.
-        </h2>
-
-        <share-bar></share-bar>
-      </header>
+        <h3>
+          Premium designed icons for use in web, iOS, and Android applications.
+          Load as a web component, SVG, PNG or font icon. 100% free and open source.
+        </h3>
+      </div>
 
       <icon-search></icon-search>
 

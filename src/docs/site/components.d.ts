@@ -36,6 +36,36 @@ declare global {
 
 
 import {
+  HeaderBar as HeaderBar
+} from './components/header-bar/header-bar';
+
+declare global {
+  interface HTMLHeaderBarElement extends HeaderBar, HTMLElement {
+  }
+  var HTMLHeaderBarElement: {
+    prototype: HTMLHeaderBarElement;
+    new (): HTMLHeaderBarElement;
+  };
+  interface HTMLElementTagNameMap {
+    "header-bar": HTMLHeaderBarElement;
+  }
+  interface ElementTagNameMap {
+    "header-bar": HTMLHeaderBarElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "header-bar": JSXElements.HeaderBarAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface HeaderBarAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
   LandingPage as IconSearch
 } from './components/icon-search/icon-search';
 
@@ -89,36 +119,6 @@ declare global {
   }
   namespace JSXElements {
     export interface LandingPageAttributes extends HTMLAttributes {
-      
-    }
-  }
-}
-
-
-import {
-  ShareBar as ShareBar
-} from './components/share-bar/share-bar';
-
-declare global {
-  interface HTMLShareBarElement extends ShareBar, HTMLElement {
-  }
-  var HTMLShareBarElement: {
-    prototype: HTMLShareBarElement;
-    new (): HTMLShareBarElement;
-  };
-  interface HTMLElementTagNameMap {
-    "share-bar": HTMLShareBarElement;
-  }
-  interface ElementTagNameMap {
-    "share-bar": HTMLShareBarElement;
-  }
-  namespace JSX {
-    interface IntrinsicElements {
-      "share-bar": JSXElements.ShareBarAttributes;
-    }
-  }
-  namespace JSXElements {
-    export interface ShareBarAttributes extends HTMLAttributes {
       
     }
   }
