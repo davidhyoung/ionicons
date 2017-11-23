@@ -18,7 +18,7 @@ export class LandingPage {
   }
 
   componentWillLoad() {
-    return fetch('/build/data.json').then(rsp => {
+    return fetch('/data.json').then(rsp => {
       rsp.json().then(d => this.data = d.icons);
     });
   }
@@ -42,13 +42,13 @@ export class LandingPage {
     return <div class="icon-search">
 
       <div class="search">
-        <input type="search" placeholder="Search Icons"/>
+        <input type="search" placeholder="Search Icons" autofocus/>
       </div>
 
       <div class="results">
 
         {this.filterIcons().map(icon => {
-          return <div class={'ion ion-' + icon}/>
+          return <a href='#' class={'ion ion-' + icon}/>
         })}
 
       </div>

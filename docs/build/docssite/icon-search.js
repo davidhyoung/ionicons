@@ -1,6 +1,6 @@
 /*! Built with http://stenciljs.com */
 
-DocsSite.loadStyles("icon-search","icon-search {\n  display: block;\n}\n\n.results {\n  padding-left: 10px;\n  text-align: left;\n}\n\n.ion {\n  display: inline-block;\n  font-size: 36px;\n  margin: 10px;\n  min-width: 36px;\n}\nicon-search.hydrated{visibility:inherit}");
+DocsSite.loadStyles("icon-search","icon-search {\n  display: block;\n}\n\n.results {\n  padding-left: 10px;\n  text-align: left;\n}\n\n.ion {\n  display: inline-block;\n  font-size: 36px;\n  margin: 10px;\n  min-width: 36px;\n}\n\na {\n  color: black;\n}\nicon-search.hydrated{visibility:inherit}");
 DocsSite.loadComponents(
 
 /**** module id (dev mode) ****/
@@ -20,7 +20,7 @@ class LandingPage {
         this.search = ev.target.value;
     }
     componentWillLoad() {
-        return fetch('/build/data.json').then(rsp => {
+        return fetch('/data.json').then(rsp => {
             rsp.json().then(d => this.data = d.icons);
         });
     }
@@ -39,9 +39,9 @@ class LandingPage {
     render() {
         return h("div", { class: "icon-search" },
             h("div", { class: "search" },
-                h("input", { type: "search", placeholder: "Search Icons" })),
+                h("input", { type: "search", placeholder: "Search Icons", autofocus: true })),
             h("div", { class: "results" }, this.filterIcons().map(icon => {
-                return h("div", { class: 'ion ion-' + icon });
+                return h("a", { href: '#', class: 'ion ion-' + icon });
             })));
     }
 }
