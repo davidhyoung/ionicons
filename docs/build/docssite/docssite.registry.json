@@ -4,20 +4,41 @@
     [
       "footer-bar",
       [
-        "qlkdaov7",
-        "owcp4xz7"
+        "o6eid29s",
+        "hixhjesy"
       ],
-      1
+      1,
+      0,
+      2
+    ],
+    [
+      "header-bar",
+      [
+        "xxbxrciy",
+        "q9s6sxoc"
+      ],
+      1,
+      0,
+      2
     ],
     [
       "icon-search",
       [
-        "r8tgxnhs",
-        "kkji7jdg"
+        "u8uvfnml",
+        "fnqnflqq"
       ],
       1,
-      0,
-      0,
+      [
+        [
+          "hasFocus",
+          5
+        ],
+        [
+          "icons",
+          5
+        ]
+      ],
+      2,
       0,
       [
         [
@@ -37,21 +58,15 @@
     [
       "landing-page",
       [
-        "k43zacyc",
-        "uydchyoc"
+        "77eqc9v8",
+        "ntaisy2x"
       ],
-      1
-    ],
-    [
-      "share-bar",
-      [
-        "uehmi4ed",
-        "v0gnp8pw"
-      ],
-      1
+      1,
+      0,
+      2
     ]
   ],
-  "core": "docssite.e926bixn.js",
-  "coreSsr": "docssite.9qasde7u.js",
-  "corePolyfilled": "docssite.3ohs8qkj.js"
+  "core": "docssite.oqp9hnab.js",
+  "coreSsr": "docssite.squdgvzg.js",
+  "corePolyfilled": "docssite.cqymbjtb.js"
 }

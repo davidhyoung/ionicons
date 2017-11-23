@@ -1,4 +1,0 @@
-/*! Built with http://stenciljs.com */
-
-DocsSite.loadStyles("share-bar","\nshare-bar.hydrated{visibility:inherit}");
-DocsSite.loadComponents("uehmi4ed",function(t,a,r,e){"use strict";class s{render(){return a("div",null,a("span",{class:"twitter-share"},a("a",{href:"https://twitter.com/share",class:"twitter-share-button","data-via":"ionicframework","data-hashtags":"icons,webdev,mobile","data-related":"benjsperry,maxlynch,adamdbradley,drifty"},"Tweet")),a("span",{class:"twitter-follow"},a("a",{href:"https://twitter.com/ionicframework",class:"twitter-follow-button"},"Follow @ionicframework")),a("span",{class:"github-star"},a("iframe",{src:"http://ghbtns.com/github-btn.html?user=ionic-team&repo=ionicons&type=watch&count=true",allowtransparency:"true",frameborder:"0",scrolling:"0",width:"110",height:"20"})))}}t["share-bar"]=s},["share-bar",0,{}]);;

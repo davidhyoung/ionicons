@@ -1,4 +1,0 @@
-/*! Built with http://stenciljs.com (es5) */
-
-DocsSite.loadStyles("icon-search","\nicon-search.hydrated{visibility:inherit}");
-DocsSite.loadComponents("kkji7jdg",function(o,c,n,e){"use strict";var t=function(){function o(){}return o.prototype.keyup=function(o){console.log("keyup",o)},o.prototype.focusout=function(o){console.log("focusout",o)},o.prototype.focusin=function(o){console.log("focusin",o)},o.prototype.render=function(){return c("div",{class:"icon-search"},c("div",{class:"search"},c("input",{id:"search",type:"search",placeholder:"Search"})))},o}();o["icon-search"]=t},["icon-search",0,{}]);;

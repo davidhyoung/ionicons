@@ -5,7 +5,7 @@
 
 # Cheatsheet
 
-  docs/cheatsheet.html
+    docs/cheatsheet.html
 
 
 ## Install
