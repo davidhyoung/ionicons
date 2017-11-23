@@ -499,6 +499,10 @@
       "name": "ios-finger-print"
     },
     {
+      "code": "0xf1ab",
+      "name": "ios-fitness"
+    },
+    {
       "code": "0xf42d",
       "name": "ios-flag"
     },
