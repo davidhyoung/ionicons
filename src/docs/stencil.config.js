@@ -3,8 +3,8 @@ exports.config = {
   srcDir: 'site/',
   wwwDir: '../../docs/',
   copy: [
-    { src: '../../../dist/ionicons', dest: 'build/ionicons' },
-    { src: '../../../dist/ionicons.js', dest: 'build/ionicons.js' },
+    { src: '../../../dist/css', dest: 'build/css' },
+    { src: '../../../dist/fonts', dest: 'build/fonts' },
     { src: '../../../dist/ionicons/data.json', dest: 'build/data.json' }
   ],
   serviceWorker: false

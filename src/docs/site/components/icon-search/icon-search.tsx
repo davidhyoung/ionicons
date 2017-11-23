@@ -48,9 +48,7 @@ export class LandingPage {
       <div class="results">
 
         {this.filterIcons().map(icon => {
-          return <div class="icon">
-            <ion-icon name={icon}/>
-          </div>
+          return <div class={'ion ion-' + icon}/>
         })}
 
       </div>

@@ -3,16 +3,17 @@ icon-search {
   display: block;
 }
 
-.icon {
+.results {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.ion {
   display: inline-block;
 
-  width: 36px;
-  height: 36px;
+  font-size: 36px;
 
-  border: 1px solid red;
+  margin: 10px;
+  min-width: 36px;
 }
 
-ion-icon svg {
-  width: 36px;
-  height: 36px;
-}

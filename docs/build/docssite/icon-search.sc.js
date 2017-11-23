@@ -1,6 +1,6 @@
 /*! Built with http://stenciljs.com */
 
-DocsSite.loadStyles("icon-search","icon-search[data-icon-search] {\n  display: block;\n}\n\n.icon[data-icon-search] {\n  display: inline-block;\n  width: 36px;\n  height: 36px;\n  border: 1px solid red;\n}\n\nion-icon[data-icon-search]   svg[data-icon-search] {\n  width: 36px;\n  height: 36px;\n}\nicon-search.hydrated{visibility:inherit}");
+DocsSite.loadStyles("icon-search","icon-search[data-icon-search] {\n  display: block;\n}\n\n.results[data-icon-search] {\n  padding-left: 10px;\n  text-align: left;\n}\n\n.ion[data-icon-search] {\n  display: inline-block;\n  font-size: 36px;\n  margin: 10px;\n  min-width: 36px;\n}\nicon-search.hydrated{visibility:inherit}");
 DocsSite.loadComponents(
 
 /**** module id (dev mode) ****/
@@ -41,8 +41,7 @@ class LandingPage {
             h("div", { class: "search" },
                 h("input", { type: "search", placeholder: "Search Icons" })),
             h("div", { class: "results" }, this.filterIcons().map(icon => {
-                return h("div", { class: "icon" },
-                    h("ion-icon", { name: icon }));
+                return h("div", { class: 'ion ion-' + icon });
             })));
     }
 }
