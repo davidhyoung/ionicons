@@ -4,8 +4,8 @@
     [
       "footer-bar",
       [
-        "o6eid29s",
-        "hixhjesy"
+        "footer-bar",
+        null
       ],
       1,
       0,
@@ -14,8 +14,8 @@
     [
       "header-bar",
       [
-        "xxbxrciy",
-        "q9s6sxoc"
+        "header-bar",
+        null
       ],
       1,
       0,
@@ -24,31 +24,23 @@
     [
       "icon-search",
       [
-        "u8uvfnml",
-        "fnqnflqq"
+        "icon-search",
+        null
       ],
       1,
       [
         [
-          "hasFocus",
+          "data",
           5
         ],
         [
-          "icons",
+          "search",
           5
         ]
       ],
       2,
       0,
       [
-        [
-          "focusin",
-          "focusin"
-        ],
-        [
-          "focusout",
-          "focusout"
-        ],
         [
           "keyup",
           "keyup"
@@ -58,15 +50,15 @@
     [
       "landing-page",
       [
-        "77eqc9v8",
-        "ntaisy2x"
+        "landing-page",
+        null
       ],
       1,
       0,
       2
     ]
   ],
-  "core": "docssite.oqp9hnab.js",
-  "coreSsr": "docssite.squdgvzg.js",
-  "corePolyfilled": "docssite.cqymbjtb.js"
+  "core": "docssite.core.js",
+  "coreSsr": "docssite.core.ssr.js",
+  "corePolyfilled": "es5-build-disabled.js"
 }

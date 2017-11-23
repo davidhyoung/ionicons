@@ -1,4 +1,0 @@
-/*! Built with http://stenciljs.com */
-
-DocsSite.loadStyles("icon-search","icon-search{display:block}.icon{display:inline-block;width:36px;height:36px;border:1px solid red}ion-icon svg{width:36px;height:36px}\nicon-search.hydrated{visibility:inherit}");
-DocsSite.loadComponents("u8uvfnml",function(s,c,o,e){"use strict";class i{constructor(){this.hasFocus=!1,this.icons=[]}keyup(s){console.log("keyup",s)}focusin(){this.hasFocus=!0}focusout(){this.hasFocus=!1}componentWillLoad(){return Promise.resolve().then(()=>{this.icons=["star","home"]})}render(){return c("div",{class:"icon-search"},c("div",{class:"search"},c("input",{type:"search",placeholder:"Search Icons"})),c("div",{class:"results"},this.icons.map(s=>c("div",{class:"icon"},c("ion-icon",{name:s})))))}}s["icon-search"]=i},["icon-search",[["hasFocus",5,0,1],["icons",5,0,1]],{}]);;

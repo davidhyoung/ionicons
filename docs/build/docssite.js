@@ -1,1 +1,34 @@
-!function(e,t,s,i,n,o,c,r,a,u){"use strict";for((e[s]=e[s]||{}).components=r=r||[],(u=r.filter(function(e){return e[2]}).map(function(e){return e[0]})).length&&((a=t.createElement("style")).innerHTML=u.join()+"{visibility:hidden}",a.setAttribute("data-visibility",""),t.head.insertBefore(a,t.head.firstChild)),s=s.toLowerCase(),u=(a=t.scripts).length-1;u>=0;u--)if(a[u].src&&a[u].src.split("/").pop()===s+".js"){i=a[u].src.replace(s+".js",s+"/");break}(a=t.createElement("script")).src=i+("noModule"in a&&e.customElements&&e.fetch?t.documentElement.hasAttribute("data-ssr")?"docssite.squdgvzg.js":"docssite.oqp9hnab.js":"docssite.cqymbjtb.js"),a.setAttribute("data-path",i),a.setAttribute("data-core","docssite.oqp9hnab.js"),t.head.appendChild(a)}(window,document,"DocsSite","/build/docssite/",0,0,0,[["footer-bar",["o6eid29s","hixhjesy"],1,0,2],["header-bar",["xxbxrciy","q9s6sxoc"],1,0,2],["icon-search",["u8uvfnml","fnqnflqq"],1,[["hasFocus",5],["icons",5]],2,0,[["focusin","focusin"],["focusout","focusout"],["keyup","keyup"]]],["landing-page",["77eqc9v8","ntaisy2x"],1,0,2]]);
+/*! Built with http://stenciljs.com */
+(function (window, document, appNamespace, publicPath, appCore, appCoreSsr, appCorePolyfilled, components, x, i) {
+    'use strict';
+    // create global namespace if it doesn't already exist
+    (window[appNamespace] = window[appNamespace] || {}).components = components = components || [];
+    // auto hide components until they been fully hydrated
+    // reusing the "x" and "i" variables from the args for funzies
+    // note: filter and map must stay es5 and must not use arrow functions
+    i = components.filter(function (c) { return c[2]; }).map(function (c) { return c[0]; });
+    if (i.length) {
+        x = document.createElement('style');
+        x.innerHTML = i.join() + '{visibility:hidden}';
+        x.setAttribute('data-visibility', '');
+        document.head.insertBefore(x, document.head.firstChild);
+    }
+    // get this current script
+    appNamespace = appNamespace.toLowerCase();
+    x = document.scripts;
+    for (i = x.length - 1; i >= 0; i--) {
+        if (x[i].src && x[i].src.split('/').pop() === appNamespace + '.js') {
+            publicPath = x[i].src.replace(appNamespace + '.js', appNamespace + '/');
+            break;
+        }
+    }
+    // request the core this browser needs
+    // test for native support of custom elements and fetch
+    // if either of those are not supported, then use the core w/ polyfills
+    // also check if the page was build with ssr or not
+    x = document.createElement('script');
+    x.src = publicPath + (('noModule' in x && window.customElements && window.fetch) ? (document.documentElement.hasAttribute('data-ssr') ? appCoreSsr : appCore) : appCorePolyfilled);
+    x.setAttribute('data-path', publicPath);
+    x.setAttribute('data-namespace', appNamespace);
+    document.head.appendChild(x);
+})(window, document, "DocsSite","/build/docssite/","docssite.core.js","docssite.core.ssr.js","es5-build-disabled.js",[["footer-bar",["footer-bar",null],1,0,2],["header-bar",["header-bar",null],1,0,2],["icon-search",["icon-search",null],1,[["data",5],["search",5]],2,0,[["keyup","keyup"]]],["landing-page",["landing-page",null],1,0,2]]);

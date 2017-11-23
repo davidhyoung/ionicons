@@ -8,29 +8,34 @@ import { Component, Listen, State } from '@stencil/core';
 })
 export class LandingPage {
 
-  @State() hasFocus = false;
+  @State() data: IconData[] = [];
 
-  @State() icons: any[] = [];
+  @State() search: string = '';
 
   @Listen('keyup')
   keyup(ev: KeyboardEvent) {
-    console.log('keyup', ev);
-  }
-
-  @Listen('focusin')
-  focusin() {
-    this.hasFocus = true;
-  }
-
-  @Listen('focusout')
-  focusout() {
-    this.hasFocus = false;
+    this.search = (ev.target as HTMLInputElement).value;
   }
 
   componentWillLoad() {
-    return Promise.resolve().then(() => {
-      this.icons = ['star', 'home'];
+    return fetch('/build/data.json').then(rsp => {
+      rsp.json().then(d => this.data = d.icons);
     });
+  }
+
+  filterIcons() {
+    const search = this.search.trim().toLowerCase();
+    const icons: string[] = [];
+
+    this.data.forEach(iconData => {
+      if (search === '' || iconData.tags.some(t => t.indexOf(search) > -1)) {
+        iconData.icons.forEach(iconName => {
+          icons.push(iconName);
+        });
+      }
+    });
+
+    return icons;
   }
 
   render() {
@@ -42,7 +47,7 @@ export class LandingPage {
 
       <div class="results">
 
-        {this.icons.map(icon => {
+        {this.filterIcons().map(icon => {
           return <div class="icon">
             <ion-icon name={icon}/>
           </div>
@@ -53,4 +58,10 @@ export class LandingPage {
     </div>
   }
 
+}
+
+
+interface IconData {
+  icons: string[];
+  tags: string[];
 }
