@@ -4,7 +4,7 @@ exports.config = {
   generateWWW: false,
   distDir: 'dist/',
   srcDir: 'src/components/',
-  emptyDistDir: false
+  emptyDist: false
 };
 
 exports.devServer = {
