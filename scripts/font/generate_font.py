@@ -3,7 +3,7 @@
 # http://fontcustom.com/
 
 import fontforge
-import os
+import os, errno
 import md5
 import subprocess
 import tempfile

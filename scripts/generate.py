@@ -5,6 +5,7 @@ import subprocess
 import json
 import codecs
 from collections import OrderedDict
+import hashlib
 
 
 SCRIPTS_PATH = os.path.dirname(os.path.abspath(__file__))
@@ -34,14 +35,46 @@ def main():
     if e.errno != errno.EEXIST:
       raise
 
-  generate_font_files()
+  if requires_update():
+    generate_font_files()
 
-  data = get_build_data()
+    data = get_build_data()
 
-  rename_svg_glyph_names(data)
-  generate_scss(data)
-  generate_svg_files()
-  generate_cheatsheet(data)
+    rename_svg_glyph_names(data)
+    generate_scss(data)
+    generate_svg_files()
+    generate_cheatsheet(data)
+
+
+def requires_update():
+  m = hashlib.sha256()
+
+  for filename in os.listdir(INPUT_SVG_DIR):
+    filename = os.path.join(INPUT_SVG_DIR, filename)
+    with open(filename, 'rb') as inputfile:
+      data = inputfile.read()
+      m.update(data)
+
+  current_hash = m.hexdigest()
+
+  manifest_path = os.path.join(SCRIPTS_PATH, 'manifest.json')
+
+  f = codecs.open(manifest_path, 'r', 'utf-8')
+  data = json.loads(f.read())
+  last_hash = data.get('hash')
+  f.close()
+
+  if last_hash != current_hash:
+    print "Generating fonts..."
+    data['hash'] = current_hash
+
+    with open(manifest_path, 'w') as outfile:
+      json.dump(data, outfile)
+
+    return True
+
+  print "SVGs unchanged, skip generating fonts"
+  return False
 
 
 def generate_font_files():
