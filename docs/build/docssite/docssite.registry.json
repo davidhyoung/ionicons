@@ -4,8 +4,8 @@
     [
       "footer-bar",
       [
-        "footer-bar",
-        null
+        "o6eid29s",
+        "hixhjesy"
       ],
       1,
       0,
@@ -14,8 +14,8 @@
     [
       "header-bar",
       [
-        "header-bar",
-        null
+        "xxbxrciy",
+        "q9s6sxoc"
       ],
       1,
       0,
@@ -24,8 +24,8 @@
     [
       "icon-search",
       [
-        "icon-search",
-        null
+        "wa7ufsfs",
+        "153lcfgm"
       ],
       1,
       [
@@ -50,15 +50,15 @@
     [
       "landing-page",
       [
-        "landing-page",
-        null
+        "77eqc9v8",
+        "ntaisy2x"
       ],
       1,
       0,
       2
     ]
   ],
-  "core": "docssite.core.js",
-  "coreSsr": "docssite.core.ssr.js",
-  "corePolyfilled": "es5-build-disabled.js"
+  "core": "docssite.5aonlk7t.js",
+  "coreSsr": "docssite.7s0y4229.js",
+  "corePolyfilled": "docssite.4jzh5o5s.js"
 }
