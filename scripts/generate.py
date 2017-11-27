@@ -38,12 +38,12 @@ def main():
   if requires_update():
     generate_font_files()
 
-    data = get_build_data()
+  data = get_build_data()
 
-    rename_svg_glyph_names(data)
-    generate_scss(data)
-    generate_svg_files()
-    generate_cheatsheet(data)
+  rename_svg_glyph_names(data)
+  generate_scss(data)
+  generate_svg_files()
+  generate_cheatsheet(data)
 
 
 def requires_update():
@@ -64,7 +64,7 @@ def requires_update():
   last_hash = data.get('hash')
   f.close()
 
-  if last_hash != current_hash:
+  if last_hash != current_hash or not os.path.exists(FONTS_FOLDER_PATH):
     print "Generating fonts..."
     data['hash'] = current_hash
 
